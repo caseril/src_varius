@@ -1,0 +1,8 @@
+#Disabilito IotEdge
+
+sudo systemctl stop iotedge
+sudo systemctl disable iotedge
+
+#Password
+user: regas
+pwd: sarego

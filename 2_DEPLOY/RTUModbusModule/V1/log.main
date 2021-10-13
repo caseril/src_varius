@@ -1,0 +1,19 @@
+2021-04-14 09:33:35,045 - library.base_iothub_client - INFO - init_logging::end
+2021-04-14 09:33:39,575 - library.base_iothub_client - INFO - get_config_measurement_list::filename:None
+2021-04-14 09:33:39,576 - library.base_iothub_client - INFO - get_config_measurement_list::config_list_from_file:[]
+2021-04-14 09:33:39,577 - library.base_iothub_client - INFO - get_config_measurement_list::config_list_from_dict:[]
+2021-04-14 09:34:47,683 - library.base_iothub_client - INFO - init_logging::end
+2021-04-14 09:34:49,318 - library.base_iothub_client - INFO - get_config_measurement_list::filename:None
+2021-04-14 09:34:49,318 - library.base_iothub_client - INFO - get_config_measurement_list::config_list_from_file:[]
+2021-04-14 09:34:49,319 - library.base_iothub_client - INFO - get_config_measurement_list::config_list_from_dict:[]
+2021-04-14 09:35:04,753 - asyncio - DEBUG - Using selector: EpollSelector
+2021-04-14 09:35:47,882 - library.base_iothub_client - INFO - init_logging::end
+2021-04-14 09:35:47,883 - library.base_iothub_client - INFO - get_config_measurement_list::filename:None
+2021-04-14 09:35:47,884 - library.base_iothub_client - INFO - get_config_measurement_list::config_list_from_file:[]
+2021-04-14 09:35:47,884 - library.base_iothub_client - INFO - get_config_measurement_list::config_list_from_dict:[]
+2021-04-14 09:35:47,885 - asyncio - DEBUG - Using selector: EpollSelector
+2021-04-14 09:37:03,581 - library.base_iothub_client - INFO - init_logging::end
+2021-04-14 09:37:03,582 - library.base_iothub_client - INFO - get_config_measurement_list::filename:None
+2021-04-14 09:37:03,583 - library.base_iothub_client - INFO - get_config_measurement_list::config_list_from_file:[]
+2021-04-14 09:37:03,583 - library.base_iothub_client - INFO - get_config_measurement_list::config_list_from_dict:[]
+2021-04-14 09:37:03,584 - asyncio - DEBUG - Using selector: EpollSelector

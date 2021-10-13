@@ -1,0 +1,65 @@
+2021-10-12 22:29:20,971 - pymodbus.transaction - DEBUG - Running transaction 1
+2021-10-12 22:29:20,974 - pymodbus.transaction - DEBUG - SEND: 0x0 0x1 0x0 0x0 0x0 0x6 0x1 0x3 0x9c 0x9b 0x0 0x2
+2021-10-12 22:29:20,976 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-10-12 22:29:20,977 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-10-12 22:29:23,714 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-10-12 22:29:23,714 - pymodbus.transaction - DEBUG - RECV: 0x0 0x1 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x0 0x0 0x0 0x0
+2021-10-12 22:29:23,715 - pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x1 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x0 0x0 0x0 0x0
+2021-10-12 22:29:23,715 - pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2021-10-12 22:29:23,716 - pymodbus.transaction - DEBUG - Adding transaction 1
+2021-10-12 22:29:23,716 - pymodbus.transaction - DEBUG - Getting transaction 1
+2021-10-12 22:29:23,717 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-10-12 22:29:23,717 - root - DEBUG - read_holding_registers::register::40091::count::2::values::[0, 0]
+2021-10-12 22:29:23,717 - root - DEBUG - read_value::register::40091::count::2::values::[0, 0]
+2021-10-12 22:29:23,718 - pymodbus.payload - DEBUG - [0, 0]
+2021-10-12 22:29:23,718 - pymodbus.payload - DEBUG - [b'\x00\x00', b'\x00\x00']
+2021-10-12 22:29:23,719 - root - DEBUG - reading::POWER_RENEWABLE::40091::value type::FLOAT32::value::0.0
+2021-10-12 22:29:25,422 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): greta-simulation-iothub.azure-devices.net:443
+2021-10-12 22:29:25,689 - urllib3.connectionpool - DEBUG - https://greta-simulation-iothub.azure-devices.net:443 "POST /twins/edge_device_A00145/modules/ElectrolyzerModbusModule/methods?api-version=2019-07-01-preview HTTP/1.1" 404 318
+2021-10-12 22:29:25,697 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): greta-simulation-iothub.azure-devices.net:443
+2021-10-12 22:29:25,944 - urllib3.connectionpool - DEBUG - https://greta-simulation-iothub.azure-devices.net:443 "POST /twins/edge_device_A00145/modules/ElectrolyzerModbusModule/methods?api-version=2019-07-01-preview HTTP/1.1" 404 318
+2021-10-12 22:29:25,953 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): greta-simulation-iothub.azure-devices.net:443
+2021-10-12 22:29:26,185 - urllib3.connectionpool - DEBUG - https://greta-simulation-iothub.azure-devices.net:443 "POST /twins/edge_device_A00145/modules/ElectrolyzerModbusModule/methods?api-version=2019-07-01-preview HTTP/1.1" 404 318
+2021-10-12 22:29:53,085 - root - DEBUG - write::POWER_RENEWABLE::deviceIdedge_device_A00145::moduleId::ElectrolyzerModbusModule::methodName::write_directmethod::payload::{'POWER_RENEWABLE': {'VALUE': 1.0}}
+2021-10-12 22:29:53,926 - root - DEBUG - done::False::message::{"Message":"{\"errorCode\":404010,\"trackingId\":\"da23460edcdd4f7ea444c9bbda7a9381-G:0-TimeStamp:10/13/2021 05:29:26\",\"message\":\"Device edge_device_A00145 Module ElectrolyzerModbusModule at IotHub greta-simulation-iothub not registered.\",\"timestampUtc\":\"2021-10-13T05:29:26.1512884Z\"}","ExceptionMessage":""}::code404
+2021-10-12 22:30:23,053 - root - DEBUG - PING::192.168.103.185:502::RECEIVED
+2021-10-12 22:30:32,254 - pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2021-10-12 22:30:32,255 - pymodbus.transaction - DEBUG - Running transaction 2
+2021-10-12 22:30:32,255 - pymodbus.transaction - DEBUG - SEND: 0x0 0x2 0x0 0x0 0x0 0x6 0x1 0x3 0x9c 0x9b 0x0 0x2
+2021-10-12 22:30:32,255 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-10-12 22:30:32,255 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-10-12 22:30:32,643 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-10-12 22:30:32,643 - pymodbus.transaction - DEBUG - RECV: 0x0 0x2 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x0 0x0 0x0 0x0
+2021-10-12 22:30:32,643 - pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x2 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x0 0x0 0x0 0x0
+2021-10-12 22:30:32,644 - pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2021-10-12 22:30:32,644 - pymodbus.transaction - DEBUG - Adding transaction 2
+2021-10-12 22:30:32,644 - pymodbus.transaction - DEBUG - Getting transaction 2
+2021-10-12 22:30:32,644 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-10-12 22:30:32,645 - root - DEBUG - read_holding_registers::register::40091::count::2::values::[0, 0]
+2021-10-12 22:30:32,645 - root - DEBUG - read_value::register::40091::count::2::values::[0, 0]
+2021-10-12 22:30:32,645 - pymodbus.payload - DEBUG - [0, 0]
+2021-10-12 22:30:32,645 - pymodbus.payload - DEBUG - [b'\x00\x00', b'\x00\x00']
+2021-10-12 22:30:52,843 - root - DEBUG - reading::POWER_RENEWABLE::40091::value type::FLOAT32::value::0.0
+2021-10-12 22:30:52,856 - root - DEBUG - PING::192.168.103.185:502::RECEIVED
+2021-10-12 22:32:15,936 - __main__ - INFO - init_logging::end
+2021-10-12 22:32:15,937 - root - INFO - ::START::
+2021-10-12 22:32:15,937 - root - INFO - ------------------------------------------------------
+2021-10-12 22:32:15,955 - asyncio - DEBUG - Using selector: EpollSelector
+2021-10-12 22:32:15,973 - root - DEBUG - PING::192.168.103.185:502::RECEIVED
+2021-10-12 22:32:22,196 - pymodbus.transaction - DEBUG - Current transaction state - IDLE
+2021-10-12 22:32:22,198 - pymodbus.transaction - DEBUG - Running transaction 1
+2021-10-12 22:32:22,202 - pymodbus.transaction - DEBUG - SEND: 0x0 0x1 0x0 0x0 0x0 0x6 0x1 0x3 0x9c 0x9b 0x0 0x2
+2021-10-12 22:32:22,203 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-10-12 22:32:22,204 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-10-12 22:32:22,616 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-10-12 22:32:22,616 - pymodbus.transaction - DEBUG - RECV: 0x0 0x1 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x0 0x0 0x0 0x0
+2021-10-12 22:32:22,616 - pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x1 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x0 0x0 0x0 0x0
+2021-10-12 22:32:22,617 - pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2021-10-12 22:32:22,617 - pymodbus.transaction - DEBUG - Adding transaction 1
+2021-10-12 22:32:22,617 - pymodbus.transaction - DEBUG - Getting transaction 1
+2021-10-12 22:32:22,617 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-10-12 22:32:22,618 - root - DEBUG - read_holding_registers::register::40091::count::2::values::[0, 0]
+2021-10-12 22:32:22,618 - root - DEBUG - read_value::register::40091::count::2::values::[0, 0]
+2021-10-12 22:32:22,618 - pymodbus.payload - DEBUG - [0, 0]
+2021-10-12 22:32:22,619 - pymodbus.payload - DEBUG - [b'\x00\x00', b'\x00\x00']
+2021-10-12 22:32:22,619 - root - DEBUG - reading::POWER_RENEWABLE::40091::value type::FLOAT32::value::0.0

@@ -1,0 +1,5 @@
+azure-iot-device~=2.0.0
+pymodbus
+numpy
+aenum
+pyparsing

@@ -1,0 +1,89 @@
+2021-10-12 08:55:16,596 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-10-12 08:55:16,597 - root - DEBUG - read_holding_registers::register::40091::count::2::values::[17388, 0]
+2021-10-12 08:55:16,597 - root - DEBUG - read_value::register::40091::count::2::values::[17388, 0]
+2021-10-12 08:55:16,598 - pymodbus.payload - DEBUG - [17388, 0]
+2021-10-12 08:55:16,598 - pymodbus.payload - DEBUG - [b'C\xec', b'\x00\x00']
+2021-10-12 08:55:16,598 - root - DEBUG - reading::POWER_RENEWABLE::40091::value type::FLOAT32::value::472.0
+2021-10-12 08:55:24,238 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): greta-simulation-iothub.azure-devices.net:443
+2021-10-12 08:55:24,616 - urllib3.connectionpool - DEBUG - https://greta-simulation-iothub.azure-devices.net:443 "POST /twins/edge_device_A00145/modules/TcpIpModbusModule/methods?api-version=2019-07-01-preview HTTP/1.1" 200 41
+2021-10-12 09:01:04,885 - __main__ - INFO - init_logging::end
+2021-10-12 09:01:04,886 - root - INFO - ::START::
+2021-10-12 09:01:04,886 - root - INFO - ------------------------------------------------------
+2021-10-12 09:01:04,893 - asyncio - DEBUG - Using selector: EpollSelector
+2021-10-12 09:01:04,902 - root - DEBUG - PING::192.168.103.185:502::RECEIVED
+2021-10-12 09:01:04,904 - pymodbus.transaction - DEBUG - Current transaction state - IDLE
+2021-10-12 09:01:04,904 - pymodbus.transaction - DEBUG - Running transaction 1
+2021-10-12 09:01:04,905 - pymodbus.transaction - DEBUG - SEND: 0x0 0x1 0x0 0x0 0x0 0x6 0x1 0x3 0x9c 0x9b 0x0 0x2
+2021-10-12 09:01:04,905 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-10-12 09:01:04,906 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-10-12 09:01:05,258 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-10-12 09:01:05,259 - pymodbus.transaction - DEBUG - RECV: 0x0 0x1 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x43 0xc4 0x80 0x0
+2021-10-12 09:01:05,259 - pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x1 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x43 0xc4 0x80 0x0
+2021-10-12 09:01:05,259 - pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2021-10-12 09:01:05,259 - pymodbus.transaction - DEBUG - Adding transaction 1
+2021-10-12 09:01:05,260 - pymodbus.transaction - DEBUG - Getting transaction 1
+2021-10-12 09:01:05,260 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-10-12 09:01:05,260 - root - DEBUG - read_holding_registers::register::40091::count::2::values::[17348, 32768]
+2021-10-12 09:01:05,260 - root - DEBUG - read_value::register::40091::count::2::values::[17348, 32768]
+2021-10-12 09:01:05,260 - pymodbus.payload - DEBUG - [17348, 32768]
+2021-10-12 09:01:05,261 - pymodbus.payload - DEBUG - [b'C\xc4', b'\x80\x00']
+2021-10-12 09:01:05,261 - root - DEBUG - reading::POWER_RENEWABLE::40091::value type::FLOAT32::value::393.0
+2021-10-12 09:01:09,495 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): greta-simulation-iothub.azure-devices.net:443
+2021-10-12 09:01:09,887 - urllib3.connectionpool - DEBUG - https://greta-simulation-iothub.azure-devices.net:443 "POST /twins/edge_device_A00145/modules/TcpIpModbusModule/methods?api-version=2019-07-01-preview HTTP/1.1" 200 41
+2021-10-12 09:05:44,639 - __main__ - INFO - init_logging::end
+2021-10-12 09:05:44,640 - root - INFO - ::START::
+2021-10-12 09:05:44,640 - root - INFO - ------------------------------------------------------
+2021-10-12 09:05:44,648 - asyncio - DEBUG - Using selector: EpollSelector
+2021-10-12 09:05:44,658 - root - DEBUG - PING::192.168.103.185:502::RECEIVED
+2021-10-12 09:05:44,660 - pymodbus.transaction - DEBUG - Current transaction state - IDLE
+2021-10-12 09:05:44,660 - pymodbus.transaction - DEBUG - Running transaction 1
+2021-10-12 09:05:44,660 - pymodbus.transaction - DEBUG - SEND: 0x0 0x1 0x0 0x0 0x0 0x6 0x1 0x3 0x9c 0x9b 0x0 0x2
+2021-10-12 09:05:44,660 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-10-12 09:05:44,661 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-10-12 09:05:45,155 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-10-12 09:05:45,156 - pymodbus.transaction - DEBUG - RECV: 0x0 0x1 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x43 0xa2 0x80 0x0
+2021-10-12 09:05:45,156 - pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x1 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x43 0xa2 0x80 0x0
+2021-10-12 09:05:45,156 - pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2021-10-12 09:05:45,157 - pymodbus.transaction - DEBUG - Adding transaction 1
+2021-10-12 09:05:45,158 - pymodbus.transaction - DEBUG - Getting transaction 1
+2021-10-12 09:05:45,158 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-10-12 09:05:45,158 - root - DEBUG - read_holding_registers::register::40091::count::2::values::[17314, 32768]
+2021-10-12 09:05:45,158 - root - DEBUG - read_value::register::40091::count::2::values::[17314, 32768]
+2021-10-12 09:05:45,159 - pymodbus.payload - DEBUG - [17314, 32768]
+2021-10-12 09:05:45,159 - pymodbus.payload - DEBUG - [b'C\xa2', b'\x80\x00']
+2021-10-12 09:05:45,159 - root - DEBUG - reading::POWER_RENEWABLE::40091::value type::FLOAT32::value::325.0
+2021-10-12 09:05:46,838 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): greta-simulation-iothub.azure-devices.net:443
+2021-10-12 09:05:47,118 - urllib3.connectionpool - DEBUG - https://greta-simulation-iothub.azure-devices.net:443 "POST /twins/edge_device_A00221/modules/TcpIpModbusModule/methods?api-version=2019-07-01-preview HTTP/1.1" 404 310
+2021-10-12 09:05:47,128 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): greta-simulation-iothub.azure-devices.net:443
+2021-10-12 09:05:47,364 - urllib3.connectionpool - DEBUG - https://greta-simulation-iothub.azure-devices.net:443 "POST /twins/edge_device_A00221/modules/TcpIpModbusModule/methods?api-version=2019-07-01-preview HTTP/1.1" 404 310
+2021-10-12 09:05:47,375 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): greta-simulation-iothub.azure-devices.net:443
+2021-10-12 09:05:47,610 - urllib3.connectionpool - DEBUG - https://greta-simulation-iothub.azure-devices.net:443 "POST /twins/edge_device_A00221/modules/TcpIpModbusModule/methods?api-version=2019-07-01-preview HTTP/1.1" 404 311
+2021-10-12 09:05:56,181 - __main__ - INFO - init_logging::end
+2021-10-12 09:05:56,181 - root - INFO - ::START::
+2021-10-12 09:05:56,182 - root - INFO - ------------------------------------------------------
+2021-10-12 09:05:56,189 - asyncio - DEBUG - Using selector: EpollSelector
+2021-10-12 09:05:56,198 - root - DEBUG - PING::192.168.103.185:502::RECEIVED
+2021-10-12 09:05:56,200 - pymodbus.transaction - DEBUG - Current transaction state - IDLE
+2021-10-12 09:05:56,200 - pymodbus.transaction - DEBUG - Running transaction 1
+2021-10-12 09:05:56,201 - pymodbus.transaction - DEBUG - SEND: 0x0 0x1 0x0 0x0 0x0 0x6 0x1 0x3 0x9c 0x9b 0x0 0x2
+2021-10-12 09:05:56,201 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-10-12 09:05:56,202 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-10-12 09:05:56,638 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-10-12 09:05:56,638 - pymodbus.transaction - DEBUG - RECV: 0x0 0x1 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x43 0xa0 0x80 0x0
+2021-10-12 09:05:56,638 - pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x1 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x43 0xa0 0x80 0x0
+2021-10-12 09:05:56,639 - pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2021-10-12 09:05:56,639 - pymodbus.transaction - DEBUG - Adding transaction 1
+2021-10-12 09:05:56,640 - pymodbus.transaction - DEBUG - Getting transaction 1
+2021-10-12 09:05:56,640 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-10-12 09:05:56,640 - root - DEBUG - read_holding_registers::register::40091::count::2::values::[17312, 32768]
+2021-10-12 09:05:56,640 - root - DEBUG - read_value::register::40091::count::2::values::[17312, 32768]
+2021-10-12 09:05:56,640 - pymodbus.payload - DEBUG - [17312, 32768]
+2021-10-12 09:05:56,641 - pymodbus.payload - DEBUG - [b'C\xa0', b'\x80\x00']
+2021-10-12 09:05:56,641 - root - DEBUG - reading::POWER_RENEWABLE::40091::value type::FLOAT32::value::321.0
+2021-10-12 09:05:58,458 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): greta-simulation-iothub.azure-devices.net:443
+2021-10-12 09:05:58,735 - urllib3.connectionpool - DEBUG - https://greta-simulation-iothub.azure-devices.net:443 "POST /twins/edge_device_A00221/modules/TcpIpModbusModule/methods?api-version=2019-07-01-preview HTTP/1.1" 404 311
+2021-10-12 09:05:58,744 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): greta-simulation-iothub.azure-devices.net:443
+2021-10-12 09:05:58,984 - urllib3.connectionpool - DEBUG - https://greta-simulation-iothub.azure-devices.net:443 "POST /twins/edge_device_A00221/modules/TcpIpModbusModule/methods?api-version=2019-07-01-preview HTTP/1.1" 404 311
+2021-10-12 09:05:58,993 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): greta-simulation-iothub.azure-devices.net:443
+2021-10-12 09:05:59,231 - urllib3.connectionpool - DEBUG - https://greta-simulation-iothub.azure-devices.net:443 "POST /twins/edge_device_A00221/modules/TcpIpModbusModule/methods?api-version=2019-07-01-preview HTTP/1.1" 404 311
+2021-10-12 09:06:31,947 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): greta-simulation-iothub.azure-devices.net:443

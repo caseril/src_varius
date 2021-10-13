@@ -1,0 +1,53 @@
+2021-10-11 23:37:30,370 - pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2021-10-11 23:37:30,373 - pymodbus.transaction - DEBUG - Running transaction 7
+2021-10-11 23:37:30,376 - pymodbus.transaction - DEBUG - SEND: 0x0 0x7 0x0 0x0 0x0 0x6 0x1 0x3 0x1 0x51 0x0 0x2
+2021-10-11 23:37:30,377 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-10-11 23:37:30,377 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-10-11 23:37:33,379 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-10-11 23:37:33,380 - pymodbus.transaction - DEBUG - RECV: 0x0 0x7 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x44 0xc2 0x60 0x0
+2021-10-11 23:37:33,381 - pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x7 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x44 0xc2 0x60 0x0
+2021-10-11 23:37:33,381 - pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2021-10-11 23:37:33,381 - pymodbus.transaction - DEBUG - Adding transaction 7
+2021-10-11 23:37:33,382 - pymodbus.transaction - DEBUG - Getting transaction 7
+2021-10-11 23:37:33,382 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-10-11 23:37:33,382 - root - DEBUG - read_holding_registers::register::337::count::2::values::[17602, 24576]
+2021-10-11 23:37:33,382 - root - DEBUG - read_value::register::337::count::2::values::[17602, 24576]
+2021-10-11 23:37:33,382 - pymodbus.payload - DEBUG - [17602, 24576]
+2021-10-11 23:37:33,383 - pymodbus.payload - DEBUG - [b'\x00`', b'\xc2D']
+2021-10-11 23:38:27,492 - __main__ - INFO - init_logging::end
+2021-10-11 23:38:29,644 - pymodbus.transaction - DEBUG - Current transaction state - IDLE
+2021-10-11 23:38:29,645 - pymodbus.transaction - DEBUG - Running transaction 1
+2021-10-11 23:38:29,645 - pymodbus.transaction - DEBUG - SEND: 0x0 0x1 0x0 0x0 0x0 0x6 0x1 0x3 0x1 0x51 0x0 0x2
+2021-10-11 23:38:29,646 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-10-11 23:38:29,647 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-10-11 23:38:29,984 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-10-11 23:38:29,985 - pymodbus.transaction - DEBUG - RECV: 0x0 0x1 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x44 0xcb 0x60 0x0
+2021-10-11 23:38:29,985 - pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x1 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x44 0xcb 0x60 0x0
+2021-10-11 23:38:29,985 - pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2021-10-11 23:38:29,985 - pymodbus.transaction - DEBUG - Adding transaction 1
+2021-10-11 23:38:29,986 - pymodbus.transaction - DEBUG - Getting transaction 1
+2021-10-11 23:38:29,986 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-10-11 23:38:29,986 - root - DEBUG - read_holding_registers::register::337::count::2::values::[17611, 24576]
+2021-10-11 23:38:29,986 - root - DEBUG - read_value::register::337::count::2::values::[17611, 24576]
+2021-10-11 23:38:29,986 - pymodbus.payload - DEBUG - [17611, 24576]
+2021-10-11 23:38:29,987 - pymodbus.payload - DEBUG - [b'\x00`', b'\xcbD']
+2021-10-12 00:10:17,311 - __main__ - INFO - init_logging::end
+2021-10-12 00:10:20,318 - pymodbus.client.sync - ERROR - Connection to (10.16.217.1, 666) failed: timed out
+2021-10-12 00:10:20,318 - root - INFO - ::STOP::
+2021-10-12 00:10:20,318 - root - INFO - ------------------------------------------------------
+2021-10-12 02:48:28,619 - __main__ - INFO - init_logging::end
+2021-10-12 02:48:31,089 - pymodbus.transaction - DEBUG - Current transaction state - IDLE
+2021-10-12 02:48:31,091 - pymodbus.transaction - DEBUG - Running transaction 1
+2021-10-12 02:48:31,094 - pymodbus.transaction - DEBUG - SEND: 0x0 0x1 0x0 0x0 0x0 0x6 0x1 0x3 0x0 0x32 0x0 0x1
+2021-10-12 02:48:31,098 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-10-12 02:48:31,098 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-10-12 02:48:31,104 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-10-12 02:48:31,105 - pymodbus.transaction - DEBUG - RECV: 0x0 0x1 0x0 0x0 0x0 0x5 0x1 0x3 0x2 0x0 0x1
+2021-10-12 02:48:31,107 - pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x1 0x0 0x0 0x0 0x5 0x1 0x3 0x2 0x0 0x1
+2021-10-12 02:48:31,109 - pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2021-10-12 02:48:31,110 - pymodbus.transaction - DEBUG - Adding transaction 1
+2021-10-12 02:48:31,113 - pymodbus.transaction - DEBUG - Getting transaction 1
+2021-10-12 02:48:31,116 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-10-12 02:48:31,117 - root - DEBUG - read_holding_registers::register::50::count::1::values::[1]
+2021-10-12 02:48:31,119 - root - DEBUG - read_value::register::50::count::1::values::[1]
+2021-10-12 02:48:31,121 - pymodbus.payload - DEBUG - [1]

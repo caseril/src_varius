@@ -1,0 +1,104 @@
+2021-09-28 06:14:30,571 - root - ERROR - Traceback (most recent call last):
+  File "/home/ubuntu/Projects/Lorenzo/src VARIO/ModBusRtuDeviceTester/v_0.1/library/utils.py", line 371, in run_and_try_async
+    return f(*args, **kwargs)
+  File "/home/ubuntu/Projects/Lorenzo/src VARIO/ModBusRtuDeviceTester/v_0.1/library/base_modbus.py", line 215, in read_holding_registers
+    registers = self.client.read_holding_registers(register, count, unit=self.modbus_id).registers
+AttributeError: 'ModbusIOException' object has no attribute 'registers'
+
+2021-09-28 06:14:30,689 - pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2021-09-28 06:14:30,689 - pymodbus.transaction - DEBUG - Running transaction 2
+2021-09-28 06:14:30,690 - pymodbus.transaction - DEBUG - SEND: 0x1 0x3 0x0 0x55 0x0 0x2 0xd4 0x1b
+2021-09-28 06:14:30,690 - pymodbus.framer.rtu_framer - DEBUG - Changing state to IDLE - Last Frame End - None, Current Time stamp - 1632834870.690274
+2021-09-28 06:14:30,695 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-09-28 06:14:30,695 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-09-28 06:14:31,697 - pymodbus.transaction - DEBUG - Incomplete message received, Expected 9 bytes Recieved 0 bytes !!!!
+2021-09-28 06:14:31,698 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-09-28 06:14:31,698 - pymodbus.transaction - DEBUG - RECV: 
+2021-09-28 06:14:31,698 - pymodbus.framer.rtu_framer - DEBUG - Frame - [b''] not ready
+2021-09-28 06:14:31,698 - pymodbus.transaction - DEBUG - Getting transaction 1
+2021-09-28 06:14:31,698 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-09-28 06:14:31,699 - root - DEBUG - run_and_try_if_true iteration 1
+2021-09-28 06:14:31,800 - pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2021-09-28 06:14:31,800 - pymodbus.transaction - DEBUG - Running transaction 3
+2021-09-28 06:14:31,801 - pymodbus.transaction - DEBUG - SEND: 0x1 0x3 0x0 0x55 0x0 0x2 0xd4 0x1b
+2021-09-28 06:14:31,801 - pymodbus.framer.rtu_framer - DEBUG - Changing state to IDLE - Last Frame End - 1632834871.697757, Current Time stamp - 1632834871.801266
+2021-09-28 06:14:31,801 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-09-28 06:14:31,801 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-09-28 06:14:32,803 - pymodbus.transaction - DEBUG - Incomplete message received, Expected 9 bytes Recieved 0 bytes !!!!
+2021-09-28 06:14:32,803 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-09-28 06:14:32,804 - pymodbus.transaction - DEBUG - RECV: 
+2021-09-28 06:14:32,804 - pymodbus.framer.rtu_framer - DEBUG - Frame - [b''] not ready
+2021-09-28 06:14:32,805 - pymodbus.transaction - DEBUG - Getting transaction 1
+2021-09-28 06:14:32,805 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-09-28 06:14:32,805 - root - DEBUG - run_and_try_if_true iteration 2
+2021-09-28 06:14:32,907 - root - DEBUG - read_value::register::85::count::2::values::None
+2021-09-28 06:14:33,209 - root - INFO - ::STOP::
+2021-09-28 06:14:33,210 - root - INFO - ------------------------------------------------------
+2021-09-28 06:14:42,769 - __main__ - INFO - init_logging::end
+2021-09-28 06:14:44,622 - pymodbus.transaction - DEBUG - Current transaction state - IDLE
+2021-09-28 06:14:44,623 - pymodbus.transaction - DEBUG - Running transaction 1
+2021-09-28 06:14:44,623 - pymodbus.transaction - DEBUG - SEND: 0x1 0x3 0x0 0x57 0x0 0x2 0x75 0xdb
+2021-09-28 06:14:44,623 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-09-28 06:14:44,623 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-09-28 06:14:45,912 - pymodbus.transaction - DEBUG - Transaction failed. (Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received)) 
+2021-09-28 06:14:45,913 - pymodbus.framer.rtu_framer - DEBUG - Frame - [b''] not ready
+2021-09-28 06:14:45,913 - pymodbus.transaction - DEBUG - Getting transaction 1
+2021-09-28 06:14:45,913 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-09-28 06:14:45,914 - root - DEBUG - run_and_try_if_true iteration 0
+2021-09-28 06:14:45,915 - root - ERROR - Traceback (most recent call last):
+  File "/home/ubuntu/Projects/Lorenzo/src VARIO/ModBusRtuDeviceTester/v_0.1/library/utils.py", line 371, in run_and_try_async
+    return f(*args, **kwargs)
+  File "/home/ubuntu/Projects/Lorenzo/src VARIO/ModBusRtuDeviceTester/v_0.1/library/base_modbus.py", line 215, in read_holding_registers
+    registers = self.client.read_holding_registers(register, count, unit=self.modbus_id).registers
+AttributeError: 'ModbusIOException' object has no attribute 'registers'
+
+2021-09-28 06:14:46,032 - pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2021-09-28 06:14:46,033 - pymodbus.transaction - DEBUG - Running transaction 2
+2021-09-28 06:14:46,033 - pymodbus.transaction - DEBUG - SEND: 0x1 0x3 0x0 0x57 0x0 0x2 0x75 0xdb
+2021-09-28 06:14:46,033 - pymodbus.framer.rtu_framer - DEBUG - Changing state to IDLE - Last Frame End - None, Current Time stamp - 1632834886.033582
+2021-09-28 06:14:46,038 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-09-28 06:14:46,038 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-09-28 06:14:47,041 - pymodbus.transaction - DEBUG - Incomplete message received, Expected 9 bytes Recieved 0 bytes !!!!
+2021-09-28 06:14:47,041 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-09-28 06:14:47,041 - pymodbus.transaction - DEBUG - RECV: 
+2021-09-28 06:14:47,041 - pymodbus.framer.rtu_framer - DEBUG - Frame - [b''] not ready
+2021-09-28 06:14:47,042 - pymodbus.transaction - DEBUG - Getting transaction 1
+2021-09-28 06:14:47,042 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-09-28 06:14:47,042 - root - DEBUG - run_and_try_if_true iteration 1
+2021-09-28 06:14:47,142 - pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2021-09-28 06:14:47,143 - pymodbus.transaction - DEBUG - Running transaction 3
+2021-09-28 06:14:47,144 - pymodbus.transaction - DEBUG - SEND: 0x1 0x3 0x0 0x57 0x0 0x2 0x75 0xdb
+2021-09-28 06:14:47,144 - pymodbus.framer.rtu_framer - DEBUG - Changing state to IDLE - Last Frame End - 1632834887.040948, Current Time stamp - 1632834887.144628
+2021-09-28 06:14:47,144 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-09-28 06:14:47,144 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-09-28 06:14:48,146 - pymodbus.transaction - DEBUG - Incomplete message received, Expected 9 bytes Recieved 0 bytes !!!!
+2021-09-28 06:14:48,147 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-09-28 06:14:48,147 - pymodbus.transaction - DEBUG - RECV: 
+2021-09-28 06:14:48,147 - pymodbus.framer.rtu_framer - DEBUG - Frame - [b''] not ready
+2021-09-28 06:14:48,148 - pymodbus.transaction - DEBUG - Getting transaction 1
+2021-09-28 06:14:48,148 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-09-28 06:14:48,148 - root - DEBUG - run_and_try_if_true iteration 2
+2021-09-28 06:14:48,250 - root - DEBUG - read_value::register::87::count::2::values::None
+2021-09-28 06:14:48,537 - root - INFO - ::STOP::
+2021-09-28 06:14:48,537 - root - INFO - ------------------------------------------------------
+2021-09-28 06:22:26,522 - __main__ - INFO - init_logging::end
+2021-09-28 06:22:26,539 - pymodbus.transaction - DEBUG - Current transaction state - IDLE
+2021-09-28 06:22:26,541 - pymodbus.transaction - DEBUG - Running transaction 1
+2021-09-28 06:22:26,544 - pymodbus.transaction - DEBUG - SEND: 0x1 0x3 0x9d 0x2e 0x0 0x1 0xcb 0xaf
+2021-09-28 06:22:26,552 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-09-28 06:22:26,553 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-09-28 06:22:27,831 - pymodbus.transaction - DEBUG - Transaction failed. (Modbus Error: [Invalid Message] Incomplete message received, expected at least 2 bytes (0 received)) 
+2021-09-28 06:22:27,832 - pymodbus.framer.rtu_framer - DEBUG - Frame - [b''] not ready
+2021-09-28 06:22:27,832 - pymodbus.transaction - DEBUG - Getting transaction 1
+2021-09-28 06:22:27,832 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-09-28 06:22:27,832 - root - DEBUG - run_and_try_if_true iteration 0
+2021-09-28 06:22:27,833 - root - ERROR - Traceback (most recent call last):
+  File "/home/ubuntu/Projects/Lorenzo/src VARIO/ModBusRtuDeviceTester/v_0.1/library/utils.py", line 371, in run_and_try_async
+    return f(*args, **kwargs)
+  File "/home/ubuntu/Projects/Lorenzo/src VARIO/ModBusRtuDeviceTester/v_0.1/library/base_modbus.py", line 215, in read_holding_registers
+    registers = self.client.read_holding_registers(register, count, unit=self.modbus_id).registers
+AttributeError: 'ModbusIOException' object has no attribute 'registers'
+
+2021-09-28 06:22:27,951 - pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2021-09-28 06:22:27,951 - pymodbus.transaction - DEBUG - Running transaction 2
+2021-09-28 06:22:27,951 - pymodbus.transaction - DEBUG - SEND: 0x1 0x3 0x9d 0x2e 0x0 0x1 0xcb 0xaf

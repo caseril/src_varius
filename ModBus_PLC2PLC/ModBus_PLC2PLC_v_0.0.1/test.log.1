@@ -1,0 +1,110 @@
+2021-10-05 09:12:28,089 - root - DEBUG - reading::AC_POWER_VALUE::40091::value type::FLOAT32::value::225.0
+2021-10-05 09:12:28,465 - pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2021-10-05 09:12:28,467 - pymodbus.transaction - DEBUG - Running transaction 23
+2021-10-05 09:12:28,469 - pymodbus.transaction - DEBUG - SEND: 0x0 0x17 0x0 0x0 0x0 0xb 0x1 0x10 0x9c 0x9b 0x0 0x2 0x4 0x43 0xe8 0x80 0x0
+2021-10-05 09:12:28,470 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-10-05 09:12:28,470 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-10-05 09:12:28,866 - pymodbus.transaction - DEBUG - Transaction failed. ([Errno 104] Connection reset by peer) 
+2021-10-05 09:12:28,867 - pymodbus.framer.socket_framer - DEBUG - Processing: 
+2021-10-05 09:12:28,868 - pymodbus.transaction - DEBUG - Getting transaction 23
+2021-10-05 09:12:28,869 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-10-05 09:13:25,925 - root - DEBUG - write::AC_POWER_VALUE::40091::value type::FLOAT32::values::465.0
+2021-10-05 09:13:32,690 - pymodbus.payload - DEBUG - [17377, 32768]
+2021-10-05 09:13:32,691 - root - CRITICAL - write_value::holding::register::40091::value::[17377, 32768]
+2021-10-05 09:13:32,691 - pymodbus.payload - DEBUG - [17377, 32768]
+2021-10-05 09:13:33,114 - pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2021-10-05 09:13:33,115 - pymodbus.transaction - DEBUG - Running transaction 24
+2021-10-05 09:13:33,115 - pymodbus.transaction - DEBUG - SEND: 0x0 0x18 0x0 0x0 0x0 0xb 0x1 0x10 0x9c 0x9b 0x0 0x2 0x4 0x43 0xe1 0x80 0x0
+2021-10-05 09:13:33,115 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-10-05 09:13:33,115 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-10-05 09:13:33,512 - pymodbus.transaction - DEBUG - Transaction failed. ([Errno 104] Connection reset by peer) 
+2021-10-05 09:13:33,512 - pymodbus.framer.socket_framer - DEBUG - Processing: 
+2021-10-05 09:13:33,513 - pymodbus.transaction - DEBUG - Getting transaction 24
+2021-10-05 09:13:33,513 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-10-05 09:17:54,329 - root - DEBUG - write::AC_POWER_VALUE::40091::value type::FLOAT32::values::451.0
+2021-10-05 09:18:32,204 - __main__ - INFO - init_logging::end
+2021-10-05 09:18:32,208 - root - INFO - ::START::
+2021-10-05 09:18:32,209 - root - INFO - ------------------------------------------------------
+2021-10-05 10:15:30,443 - __main__ - INFO - init_logging::end
+2021-10-05 10:15:30,450 - root - INFO - ::START::
+2021-10-05 10:15:30,453 - root - INFO - ------------------------------------------------------
+2021-10-05 10:19:07,406 - __main__ - INFO - init_logging::end
+2021-10-05 10:19:07,408 - root - INFO - ::START::
+2021-10-05 10:19:07,408 - root - INFO - ------------------------------------------------------
+2021-10-05 10:19:11,441 - pymodbus.client.sync - ERROR - Connection to (10.16.217.1, 666) failed: timed out
+2021-10-05 10:22:36,744 - __main__ - INFO - init_logging::end
+2021-10-05 10:22:36,750 - root - INFO - ::START::
+2021-10-05 10:22:36,752 - root - INFO - ------------------------------------------------------
+2021-10-05 10:23:00,754 - asyncio - DEBUG - Using selector: EpollSelector
+2021-10-05 10:23:00,786 - root - DEBUG - PING::192.168.103.185:502::RECEIVED
+2021-10-05 10:23:01,183 - root - DEBUG - PING::10.16.217.1:666::RECEIVED
+2021-10-05 10:23:01,185 - pymodbus.transaction - DEBUG - Current transaction state - IDLE
+2021-10-05 10:23:01,185 - pymodbus.transaction - DEBUG - Running transaction 1
+2021-10-05 10:23:01,186 - pymodbus.transaction - DEBUG - SEND: 0x0 0x1 0x0 0x0 0x0 0x6 0x1 0x3 0x9c 0x9b 0x0 0x2
+2021-10-05 10:23:01,186 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-10-05 10:23:01,187 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-10-05 10:23:01,623 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-10-05 10:23:01,624 - pymodbus.transaction - DEBUG - RECV: 0x0 0x1 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x0 0x0 0x0 0x0
+2021-10-05 10:23:01,625 - pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x1 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x0 0x0 0x0 0x0
+2021-10-05 10:23:01,625 - pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2021-10-05 10:23:01,626 - pymodbus.transaction - DEBUG - Adding transaction 1
+2021-10-05 10:23:01,626 - pymodbus.transaction - DEBUG - Getting transaction 1
+2021-10-05 10:23:01,626 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-10-05 10:23:01,626 - root - DEBUG - read_holding_registers::register::40091::count::2::values::[0, 0]
+2021-10-05 10:23:01,626 - root - DEBUG - read_value::register::40091::count::2::values::[0, 0]
+2021-10-05 10:23:01,627 - pymodbus.payload - DEBUG - [0, 0]
+2021-10-05 10:23:01,627 - pymodbus.payload - DEBUG - [b'\x00\x00', b'\x00\x00']
+2021-10-05 10:23:01,628 - root - DEBUG - reading::AC_POWER_VALUE::40091::value type::FLOAT32::value::0.0
+2021-10-05 10:25:52,999 - __main__ - INFO - init_logging::end
+2021-10-05 10:25:53,001 - root - INFO - ::START::
+2021-10-05 10:25:53,003 - root - INFO - ------------------------------------------------------
+2021-10-05 10:26:05,753 - root - ERROR - ERROR while connecting plc_readers
+2021-10-05 10:26:05,754 - root - INFO - ::STOP::
+2021-10-05 10:26:05,755 - root - INFO - ------------------------------------------------------
+2021-10-05 10:26:22,041 - __main__ - INFO - init_logging::end
+2021-10-05 10:26:22,043 - root - INFO - ::START::
+2021-10-05 10:26:22,045 - root - INFO - ------------------------------------------------------
+2021-10-05 10:26:25,058 - pymodbus.client.sync - ERROR - Connection to (192.168.103.185, 502) failed: timed out
+2021-10-05 10:26:44,367 - root - ERROR - ERROR while connecting plc_writers
+2021-10-05 10:27:17,231 - __main__ - INFO - init_logging::end
+2021-10-05 10:27:17,232 - root - INFO - ::START::
+2021-10-05 10:27:17,233 - root - INFO - ------------------------------------------------------
+2021-10-05 10:27:20,237 - pymodbus.client.sync - ERROR - Connection to (192.168.103.185, 502) failed: timed out
+2021-10-05 10:27:38,008 - root - ERROR - ERROR while connecting plc_readers
+2021-10-05 10:28:04,066 - __main__ - INFO - init_logging::end
+2021-10-05 10:28:04,070 - root - INFO - ::START::
+2021-10-05 10:28:04,073 - root - INFO - ------------------------------------------------------
+2021-10-05 10:28:07,083 - pymodbus.client.sync - ERROR - Connection to (192.168.103.185, 502) failed: timed out
+2021-10-05 10:28:12,689 - root - ERROR - ERROR while connecting plc_readers
+2021-10-05 10:28:23,660 - __main__ - INFO - init_logging::end
+2021-10-05 10:28:23,663 - root - INFO - ::START::
+2021-10-05 10:28:23,664 - root - INFO - ------------------------------------------------------
+2021-10-05 10:28:26,674 - pymodbus.client.sync - ERROR - Connection to (192.168.103.185, 502) failed: timed out
+2021-10-05 10:28:33,345 - root - ERROR - ERROR while connecting plc_readers
+2021-10-05 10:29:04,953 - __main__ - INFO - init_logging::end
+2021-10-05 10:29:04,955 - root - INFO - ::START::
+2021-10-05 10:29:04,955 - root - INFO - ------------------------------------------------------
+2021-10-05 10:29:07,964 - pymodbus.client.sync - ERROR - Connection to (192.168.103.185, 502) failed: timed out
+2021-10-05 10:29:18,499 - root - ERROR - ERROR while connecting plc_readers
+2021-10-05 10:29:18,503 - asyncio - DEBUG - Using selector: EpollSelector
+2021-10-05 10:29:18,506 - root - CRITICAL - ::error: 'NoneType' object has no attribute 'measurement_list_dict'::
+2021-10-05 10:29:18,508 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<PlcLooper.plc_ping() done, defined at /home/ubuntu/Projects/Lorenzo/src VARIO/ModBus_PLC2PLC/plc_looper.py:31> exception=AttributeError("'NoneType' object has no attribute 'device_instance'")>
+Traceback (most recent call last):
+  File "/home/ubuntu/Projects/Lorenzo/src VARIO/ModBus_PLC2PLC/plc_looper.py", line 33, in plc_ping
+    if p.device_instance is not None:
+AttributeError: 'NoneType' object has no attribute 'device_instance'
+2021-10-05 10:43:45,572 - __main__ - INFO - init_logging::end
+2021-10-05 10:43:45,588 - root - INFO - ::START::
+2021-10-05 10:43:45,591 - root - INFO - ------------------------------------------------------
+2021-10-05 10:43:48,605 - pymodbus.client.sync - ERROR - Connection to (192.168.103.185, 502) failed: timed out
+2021-10-05 10:44:00,601 - pymodbus.client.sync - ERROR - Connection to (10.16.217.1, 666) failed: timed out
+2021-10-05 10:44:06,840 - root - ERROR - ERROR while connecting plc_readers
+2021-10-05 10:44:09,435 - root - ERROR - ERROR while connecting plc_writers
+2021-10-05 10:44:16,896 - __main__ - INFO - init_logging::end
+2021-10-05 10:44:16,909 - root - INFO - ::START::
+2021-10-05 10:44:16,913 - root - INFO - ------------------------------------------------------
+2021-10-05 10:44:19,943 - pymodbus.client.sync - ERROR - Connection to (192.168.103.185, 502) failed: timed out
+2021-10-05 10:44:29,735 - root - ERROR - ERROR while connecting plc_readers
+2021-10-05 10:44:29,741 - asyncio - DEBUG - Using selector: EpollSelector
+2021-10-05 10:44:29,748 - root - CRITICAL - ::error: 'NoneType' object has no attribute 'measurement_list_dict'::

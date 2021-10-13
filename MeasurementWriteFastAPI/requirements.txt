@@ -1,0 +1,8 @@
+pymodbus
+asyncio
+datetime
+six
+pyparsing
+pandas
+fastapi
+uvicorn[standard]

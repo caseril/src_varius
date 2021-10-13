@@ -1,0 +1,7 @@
+pymodbus
+asyncio
+datetime
+six
+pyparsing
+pandas
+requests

@@ -1,0 +1,26 @@
+2021-09-28 06:22:27,952 - pymodbus.framer.rtu_framer - DEBUG - Changing state to IDLE - Last Frame End - None, Current Time stamp - 1632835347.952048
+2021-09-28 06:22:27,957 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-09-28 06:22:27,957 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-09-28 06:22:28,960 - pymodbus.transaction - DEBUG - Incomplete message received, Expected 7 bytes Recieved 0 bytes !!!!
+2021-09-28 06:22:28,961 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-09-28 06:22:28,961 - pymodbus.transaction - DEBUG - RECV: 
+2021-09-28 06:22:28,962 - pymodbus.framer.rtu_framer - DEBUG - Frame - [b''] not ready
+2021-09-28 06:22:28,963 - pymodbus.transaction - DEBUG - Getting transaction 1
+2021-09-28 06:22:28,963 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-09-28 06:22:28,964 - root - DEBUG - run_and_try_if_true iteration 1
+2021-09-28 06:22:29,067 - pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2021-09-28 06:22:29,067 - pymodbus.transaction - DEBUG - Running transaction 3
+2021-09-28 06:22:29,067 - pymodbus.transaction - DEBUG - SEND: 0x1 0x3 0x9d 0x2e 0x0 0x1 0xcb 0xaf
+2021-09-28 06:22:29,068 - pymodbus.framer.rtu_framer - DEBUG - Changing state to IDLE - Last Frame End - 1632835348.960624, Current Time stamp - 1632835349.068028
+2021-09-28 06:22:29,068 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-09-28 06:22:29,068 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-09-28 06:22:30,071 - pymodbus.transaction - DEBUG - Incomplete message received, Expected 7 bytes Recieved 0 bytes !!!!
+2021-09-28 06:22:30,071 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-09-28 06:22:30,072 - pymodbus.transaction - DEBUG - RECV: 
+2021-09-28 06:22:30,072 - pymodbus.framer.rtu_framer - DEBUG - Frame - [b''] not ready
+2021-09-28 06:22:30,073 - pymodbus.transaction - DEBUG - Getting transaction 1
+2021-09-28 06:22:30,074 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-09-28 06:22:30,074 - root - DEBUG - run_and_try_if_true iteration 2
+2021-09-28 06:22:30,175 - root - DEBUG - read_value::register::40238::count::1::values::None
+2021-09-28 06:22:30,459 - root - INFO - ::STOP::
+2021-09-28 06:22:30,459 - root - INFO - ------------------------------------------------------

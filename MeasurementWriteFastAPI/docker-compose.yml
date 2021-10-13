@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  fastapi_edgedev_write:
+    image: fastapi_edgedev_write
+    build:
+      context: ./
+      dockerfile: ./Dockerfile.amd64
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    ports:
+      - "8000:8000"
+    container_name: fastapi_edgedev_write
+    environment:
+      LOCAL_NETWORK: ${LOCAL_NETWORK}
+      HOST_IP: ${HOST_IP}
+    cap_add: 
+      - net_admin
+    volumes:
+      - ~/.ssh:/root/.ssh

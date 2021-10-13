@@ -1,0 +1,61 @@
+{
+  "MODBUS_IP": {"value": "192.159.3.1"},
+  "MODBUS_PORT": {"value": "659"},
+  "MODBUS_ID": {"value": "1"},
+  "ODO_MIN": {"value": "vars.input.value.min_setpoint"},
+  "ODO_MAX": {"value": "vars.input.value.max_setpoint"},
+  "ODO_DEFAULT": {"value": "vars.input.value.default_setpoint"},
+  "ENDIAN_BYTEORDER": "Big",
+  "ENDIAN_WORDORDER": {"value": "Big"},
+  
+  "SLEEP_INTERVAL": {"value": "10"},
+  "INTERVAL": {"value": "30"},
+  "SKIP_SAME_VALUE": {"value": "True"},
+  "SKIP_MAX_TIME": {"value": "300"},
+  "SKIP_THRESHOLD": {"value": "1e-15"},
+  
+  "MODBUS_MEASUREMENT_0": {"value": "{'ODORANT_SETPOINT': {'REGISTER_NUMBER': 115, 'VALUE_TYPE': 'UINT8LOW', 'UOM': 'mg/sm3'}}"},
+  "MODBUS_MEASUREMENT_1": {"value": "{'MASSFLOW': {'REGISTER_NUMBER': 2209, 'VALUE_TYPE': 'FLOAT32', 'UOM': 'sm3/h'}}"},
+  "MODBUS_MEASUREMENT_2": {"value": "{'ODORANT_SETPOINT_REAL': {'REGISTER_NUMBER': 2218, 'VALUE_TYPE': 'FLOAT32', 'UOM': 'mg/sm3'}}"},
+  "MODBUS_MEASUREMENT_3": {"value": "{'MASSFLOW_IMPULSE_COUNT': {'REGISTER_NUMBER': 2293, 'VALUE_TYPE': 'UINT32', 'UOM': 'impulse'}}"},
+  "MODBUS_MEASUREMENT_4": {"value": "{'ODORIZATION_STATUS': {'REGISTER_NUMBER': 2249, 'VALUE_TYPE': 'INT16', 'UOM': 'status'}}"},
+  "MODBUS_MEASUREMENT_5": {"value": "{'TANK_LEVEL': {'REGISTER_NUMBER': 2220, 'VALUE_TYPE': 'FLOAT32', 'UOM': 'mm'}}"},
+  
+  "MODBUS_MEASUREMENT_6": {"value": "{'BYPASS_STATUS': {'REGISTER_NUMBER': 2200, 'VALUE_TYPE': 'BIT2HIGH', 'UOM': 'status'}}"},
+  "MODBUS_MEASUREMENT_7": {"value": "{'EV_CHARGE_STATUS': {'REGISTER_NUMBER': 2200, 'VALUE_TYPE': 'BIT0HIGH', 'UOM': 'status'}}"},
+  "MODBUS_MEASUREMENT_8": {"value": "{'EV_PRESSURE_STATUS': {'REGISTER_NUMBER': 2200, 'VALUE_TYPE': 'BIT1HIGH', 'UOM': 'status'}}"},
+  "MODBUS_MEASUREMENT_9": {"value": "{'MOTOR_STATUS': {'REGISTER_NUMBER': 2200, 'VALUE_TYPE': 'BIT3HIGH', 'UOM': 'status'}}"},
+  "MODBUS_MEASUREMENT_10": {"value": "{'TEST_LAMBIMENTO1': {'REGISTER_NUMBER': 2200, 'VALUE_TYPE': 'INT16', 'UOM': 'status', 'NOT_SEND': 'true'}}"},
+  
+  "MODBUS_MEASUREMENT_11": {"value": "{'ODORIZATION_FEEDBACK_PARAMETER': {'REGISTER_NUMBER': 2321, 'VALUE_TYPE': 'UINT16', 'UOM': 'ug/ms'}}"},
+  "MODBUS_MEASUREMENT_12": {"value": "{'ODORIZATION_FEEDBACK_PARAMETER_DYNAMIC': {'REGISTER_NUMBER': 2322, 'VALUE_TYPE': 'UINT16', 'UOM': 'ug/ms'}}"},
+  "MODBUS_MEASUREMENT_13": {"value": "{'LOW_PRESSURE_LEVEL': {'REGISTER_NUMBER': 2162, 'VALUE_TYPE': 'FLOAT32', 'UOM': 'mm'}}"},
+
+  "MODBUS_MEASUREMENT_14": {"value": "{'FS_LOW_PRESSURE_LEVEL': {'REGISTER_NUMBER': 238, 'VALUE_TYPE': 'UINT16', 'UOM': 'dimensionless', 'NOT_SEND': 'true'}}"},
+
+
+  "MODBUS_MEASUREMENT_15": {"value": "{'IMPULSE_WEIGHT_EXPONENT':   {'REGISTER_NUMBER': 148,  'VALUE_TYPE': 'UINT8HIGH',  'UOM': 'dimensionless', 'NOT_SEND': 'true'}}"},
+  "MODBUS_MEASUREMENT_16": {"value": "{'LEVEL_AREA':                {'REGISTER_NUMBER': 118,  'VALUE_TYPE': 'UINT16',    'UOM': 'mm2',            'NOT_SEND': 'true'}}"},
+  "MODBUS_MEASUREMENT_17": {"value": "{'LOW_PRESSURE_LEVEL_45MIN':  {'REGISTER_NUMBER': 2162, 'VALUE_TYPE': 'FLOAT32',   'UOM': 'mm',             'NOT_SEND': 'true', 'INTERVAL': 2700}}"},
+  "MODBUS_MEASUREMENT_18": {"value": "{'MASSFLOW_IMPULSE_45MIN':    {'REGISTER_NUMBER': 2293, 'VALUE_TYPE': 'UINT32',    'UOM': 'impulse',        'NOT_SEND': 'true', 'INTERVAL': 2700}}"},
+
+  "FUNCTION_MEASUREMENT_0": {"value": "{'IMPULSE_WEIGHT': {'FUNCTION': '10^(log2($IMPULSE_WEIGHT_EXPONENT.value) - 3)', 'UOM': 'sm3/impulse', 'NOT_SEND': 'true'}}"},
+  "FUNCTION_MEASUREMENT_1": {"value": "{'ODORANT_SETPOINT_REAL_CALC': { 'SKIP_SAME_VALUE': 'false', 'FUNCTION': '0.807 * $LEVEL_AREA.value / $IMPULSE_WEIGHT.value * ($LOW_PRESSURE_LEVEL_45MIN.old_value - $LOW_PRESSURE_LEVEL_45MIN.value) / ($MASSFLOW_IMPULSE_45MIN.value - $MASSFLOW_IMPULSE_45MIN.old_value)', 'UOM': 'mg/sm3', 'INTERVAL': 2700}}"},
+  
+
+  "MODBUS_MEASUREMENT_19": {"value": "{'VMAX':    {'REGISTER_NUMBER': 1924, 'VALUE_TYPE': 'UINT16',    'UOM': 'l',   'SCALE': 0.1,      'NOT_SEND': 'true' , 'SKIP_SAME_VALUE': 'false' }}"},
+  "MODBUS_MEASUREMENT_20": {"value": "{'HMAX':    {'REGISTER_NUMBER': 1796, 'VALUE_TYPE': 'UINT16',    'UOM': 'mm',  'SCALE': 0.1,      'NOT_SEND': 'true' , 'SKIP_SAME_VALUE': 'false' }}"},
+
+  "FUNCTION_MEASUREMENT_2": {"value": "{'ALPHA': {'FUNCTION': '2 * acos( 1 - 2 * $TANK_LEVEL.value / $HMAX.value_processed )', 'UOM': 'rad', 'NOT_SEND': 'true' }}"},
+  "FUNCTION_MEASUREMENT_3": {"value": "{'L': {'FUNCTION':  '1e6 * 4 / pi * $VMAX.value_processed / $HMAX.value_processed ^ 2',                  'UOM': 'mm',  'NOT_SEND': 'true' }}"},
+  "FUNCTION_MEASUREMENT_4": {"value": "{'TANK_LEVEL_PERCENTAGE': {'FUNCTION': ' 0.5 * 1e-6 * $L.value / $VMAX.value_processed * ( 0.25 * $ALPHA.value * $HMAX.value_processed ^ 2 - ($HMAX.value_processed - 2 * $TANK_LEVEL.value) * sqrt($TANK_LEVEL.value * ($HMAX.value_processed - $TANK_LEVEL.value) ) )', 'UOM': 'percentage' }}"},
+
+  "HASH_ALGORITHM": {"value": "sha1"},
+  "HASH_TIMEOUT": {"value": "300"},
+  "TIMEOUT_FOR_DEFAULT": {"value": "10800"},
+  
+  "FEEDBACK_ACTIVATION": {"value": "vars.input.value.feedback_activation"},
+  "SECRET_KEY": {"value": "vars.input.value.secret_key"},
+  
+  "ENABLED": {"value": "True"}
+}

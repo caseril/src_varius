@@ -1,0 +1,15 @@
+export  password = 'sarego'
+
+echo $password | sudo service inluxdb stop
+
+# avvio della VPN
+
+sudo openvpn --config /ect/openvpn/client/lorenzocase94@gmail.com.ovpn --daemon
+
+# avvio di tutti i docker
+
+for i in {1..5}
+do
+   echo "Welcome $i times"
+don
+sudo docker start $(sudo docker ps -a -q)

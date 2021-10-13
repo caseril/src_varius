@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  plc_writer:
+    image: plc_read_2_influxdb
+    build:
+      context: ./
+      dockerfile: ./Dockerfile.amd64
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    container_name: plc_read_2_influxdb
+    environment:
+      LOCAL_NETWORK: ${LOCAL_NETWORK}
+      HOST_IP: ${HOST_IP}
+    cap_add: 
+      - net_admin
+    volumes:
+      - ~/.ssh:/root/.ssh

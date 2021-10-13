@@ -1,0 +1,68 @@
+2021-03-07 06:22:20,719 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-03-07 06:22:20,722 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-03-07 06:22:21,463 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-03-07 06:22:21,464 - pymodbus.transaction - DEBUG - RECV: 0x0 0x69 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x51 0xe2 0x44 0x90
+2021-03-07 06:22:21,464 - pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x69 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x51 0xe2 0x44 0x90
+2021-03-07 06:22:21,464 - pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2021-03-07 06:22:21,464 - pymodbus.transaction - DEBUG - Adding transaction 105
+2021-03-07 06:22:21,464 - pymodbus.transaction - DEBUG - Getting transaction 105
+2021-03-07 06:22:21,465 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-03-07 06:22:21,465 - root - DEBUG - read_holding_registers::register::212::count::2::values::[20962, 17552]
+2021-03-07 06:22:21,465 - root - DEBUG - read_value::register::212::count::2::values::[20962, 17552]
+2021-03-07 06:22:21,465 - pymodbus.payload - DEBUG - [20962, 17552]
+2021-03-07 06:22:21,465 - pymodbus.payload - DEBUG - [b'D\x90', b'Q\xe2']
+2021-03-07 06:22:21,465 - root - DEBUG - reading::MASSFLOW_RAW_IMPUSE::3000::value type::FLOAT32::uom::sm3/h
+2021-03-07 06:22:21,466 - pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2021-03-07 06:22:21,466 - pymodbus.transaction - DEBUG - Running transaction 106
+2021-03-07 06:22:21,466 - pymodbus.transaction - DEBUG - SEND: 0x0 0x6a 0x0 0x0 0x0 0x6 0x1 0x3 0xb 0xb8 0x0 0x2
+2021-03-07 06:22:21,466 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-03-07 06:22:21,466 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-03-07 06:22:22,112 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-03-07 06:22:22,113 - pymodbus.transaction - DEBUG - RECV: 0x0 0x6a 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x13 0xb1 0x44 0xad
+2021-03-07 06:22:22,113 - pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x6a 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x13 0xb1 0x44 0xad
+2021-03-07 06:22:22,114 - pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2021-03-07 06:22:22,115 - pymodbus.transaction - DEBUG - Adding transaction 106
+2021-03-07 06:22:22,116 - pymodbus.transaction - DEBUG - Getting transaction 106
+2021-03-07 06:22:22,116 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-03-07 06:22:22,117 - root - DEBUG - read_holding_registers::register::3000::count::2::values::[5041, 17581]
+2021-03-07 06:22:22,117 - root - DEBUG - read_value::register::3000::count::2::values::[5041, 17581]
+2021-03-07 06:22:22,117 - pymodbus.payload - DEBUG - [5041, 17581]
+2021-03-07 06:22:22,118 - pymodbus.payload - DEBUG - [b'D\xad', b'\x13\xb1']
+2021-03-07 06:22:22,118 - root - INFO - writing::FROMMASSFLOW::TO::MASSFLOW_RAW_IMPUSE
+2021-03-07 06:22:22,123 - urllib3.connectionpool - DEBUG - http://172.17.0.1:8086 "POST /write?db=ingrid20_frattamaggiore HTTP/1.1" 204 0
+2021-03-07 06:23:22,160 - root - DEBUG - reading::MASSFLOW::212::value type::FLOAT32::uom::sm3/h
+2021-03-07 06:23:22,160 - pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2021-03-07 06:23:22,160 - pymodbus.transaction - DEBUG - Running transaction 107
+2021-03-07 06:23:22,160 - pymodbus.transaction - DEBUG - SEND: 0x0 0x6b 0x0 0x0 0x0 0x6 0x1 0x3 0x0 0xd4 0x0 0x2
+2021-03-07 06:23:22,161 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-03-07 06:23:22,161 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-03-07 06:23:22,678 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-03-07 06:23:22,678 - pymodbus.transaction - DEBUG - RECV: 0x0 0x6b 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x43 0xc 0x44 0x8f
+2021-03-07 06:23:22,678 - pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x6b 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x43 0xc 0x44 0x8f
+2021-03-07 06:23:22,678 - pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2021-03-07 06:23:22,678 - pymodbus.transaction - DEBUG - Adding transaction 107
+2021-03-07 06:23:22,678 - pymodbus.transaction - DEBUG - Getting transaction 107
+2021-03-07 06:23:22,679 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-03-07 06:23:22,679 - root - DEBUG - read_holding_registers::register::212::count::2::values::[17164, 17551]
+2021-03-07 06:23:22,679 - root - DEBUG - read_value::register::212::count::2::values::[17164, 17551]
+2021-03-07 06:23:22,679 - pymodbus.payload - DEBUG - [17164, 17551]
+2021-03-07 06:23:22,679 - pymodbus.payload - DEBUG - [b'D\x8f', b'C\x0c']
+2021-03-07 06:23:22,680 - root - DEBUG - reading::MASSFLOW_RAW_IMPUSE::3000::value type::FLOAT32::uom::sm3/h
+2021-03-07 06:23:22,680 - pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2021-03-07 06:23:22,680 - pymodbus.transaction - DEBUG - Running transaction 108
+2021-03-07 06:23:22,680 - pymodbus.transaction - DEBUG - SEND: 0x0 0x6c 0x0 0x0 0x0 0x6 0x1 0x3 0xb 0xb8 0x0 0x2
+2021-03-07 06:23:22,680 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-03-07 06:23:22,681 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-03-07 06:23:23,160 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-03-07 06:23:23,160 - pymodbus.transaction - DEBUG - RECV: 0x0 0x6c 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x49 0x25 0x44 0x56
+2021-03-07 06:23:23,160 - pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x6c 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x49 0x25 0x44 0x56
+2021-03-07 06:23:23,160 - pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2021-03-07 06:23:23,161 - pymodbus.transaction - DEBUG - Adding transaction 108
+2021-03-07 06:23:23,161 - pymodbus.transaction - DEBUG - Getting transaction 108
+2021-03-07 06:23:23,161 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-03-07 06:23:23,161 - root - DEBUG - read_holding_registers::register::3000::count::2::values::[18725, 17494]
+2021-03-07 06:23:23,161 - root - DEBUG - read_value::register::3000::count::2::values::[18725, 17494]
+2021-03-07 06:23:23,161 - pymodbus.payload - DEBUG - [18725, 17494]
+2021-03-07 06:23:23,161 - pymodbus.payload - DEBUG - [b'DV', b'I%']
+2021-03-07 06:23:23,162 - root - INFO - writing::FROMMASSFLOW::TO::MASSFLOW_RAW_IMPUSE
+2021-03-07 06:23:23,166 - urllib3.connectionpool - DEBUG - http://172.17.0.1:8086 "POST /write?db=ingrid20_frattamaggiore HTTP/1.1" 204 0

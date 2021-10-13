@@ -1,0 +1,14 @@
+azure-iot-device==2.4.0
+pymodbus
+numpy
+aenum
+pyparsing
+psycopg2-binary
+sqlalchemy
+asyncio
+datetime
+influxdb
+six
+pyparsing
+pyodbc
+pandas

@@ -1,0 +1,19 @@
+version: "3.3"
+
+services:
+  modbus_plc2plc_writer:
+    image: modbus_plc2plc_writer
+    build:
+      context: ./
+      dockerfile: ./Dockerfile.amd64
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    container_name: modbus_plc2plc_writer
+    environment:
+      LOCAL_NETWORK: ${LOCAL_NETWORK}
+      HOST_IP: ${HOST_IP}
+    cap_add: 
+      - net_admin
+    volumes:
+      - ~/.ssh:/root/.ssh

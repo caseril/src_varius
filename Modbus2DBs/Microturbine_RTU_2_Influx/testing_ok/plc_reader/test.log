@@ -1,0 +1,74 @@
+2021-04-15 01:47:25,583 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-04-15 01:47:25,752 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-04-15 01:47:25,753 - pymodbus.transaction - DEBUG - RECV: 0xff 0x3 0x18 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xbb 0x0 0x41 0x4b 0xd7 0xa 0xbc 0xa3 0x0 0x0 0x0 0x0 0xbb 0x0 0x41 0x4b 0x6f 0xe5
+2021-04-15 01:47:25,753 - pymodbus.framer.rtu_framer - DEBUG - Getting Frame - 0x3 0x18 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xbb 0x0 0x41 0x4b 0xd7 0xa 0xbc 0xa3 0x0 0x0 0x0 0x0 0xbb 0x0 0x41 0x4b
+2021-04-15 01:47:25,753 - pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2021-04-15 01:47:25,753 - pymodbus.framer.rtu_framer - DEBUG - Frame advanced, resetting header!!
+2021-04-15 01:47:25,753 - pymodbus.transaction - DEBUG - Adding transaction 255
+2021-04-15 01:47:25,753 - pymodbus.transaction - DEBUG - Getting transaction 255
+2021-04-15 01:47:25,753 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-04-15 01:47:33,625 - __main__ - INFO - init_logging::end
+2021-04-15 01:47:33,626 - root - INFO - ::START::
+2021-04-15 01:47:33,626 - root - INFO - ------------------------------------------------------
+2021-04-15 01:47:49,189 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2021-04-15 01:47:49,194 - urllib3.connectionpool - DEBUG - http://localhost:8086 "GET /query?q=SHOW+DATABASES HTTP/1.1" 200 None
+2021-04-15 01:47:49,195 - root - INFO - ::RTU CONNECTED::
+2021-04-15 01:47:49,196 - root - INFO - ::START CONTROLLING RTU::
+2021-04-15 01:47:49,196 - asyncio - DEBUG - Using selector: EpollSelector
+2021-04-15 01:47:49,197 - root - DEBUG - reading::CorrenteIngresso::0::value type::INT16
+2021-04-15 01:48:04,936 - pymodbus.transaction - DEBUG - Current transaction state - IDLE
+2021-04-15 01:48:04,936 - pymodbus.transaction - DEBUG - Running transaction 1
+2021-04-15 01:48:04,936 - pymodbus.transaction - DEBUG - SEND: 0xff 0x3 0x0 0x0 0x0 0xc 0x50 0x11
+2021-04-15 01:48:04,936 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-04-15 01:48:04,936 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-04-15 01:48:05,587 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-04-15 01:48:05,588 - pymodbus.transaction - DEBUG - RECV: 0xff 0x3 0x18 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xb8 0x80 0x41 0x4b 0xd7 0xa 0xbc 0xa3 0x0 0x0 0x0 0x0 0xb8 0x80 0x41 0x4b 0xae 0xd8
+2021-04-15 01:48:05,589 - pymodbus.framer.rtu_framer - DEBUG - Getting Frame - 0x3 0x18 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xb8 0x80 0x41 0x4b 0xd7 0xa 0xbc 0xa3 0x0 0x0 0x0 0x0 0xb8 0x80 0x41 0x4b
+2021-04-15 01:48:05,589 - pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2021-04-15 01:48:05,590 - pymodbus.framer.rtu_framer - DEBUG - Frame advanced, resetting header!!
+2021-04-15 01:48:05,590 - pymodbus.transaction - DEBUG - Adding transaction 255
+2021-04-15 01:48:05,591 - pymodbus.transaction - DEBUG - Getting transaction 255
+2021-04-15 01:48:05,591 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-04-15 01:48:33,525 - pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2021-04-15 01:48:33,526 - pymodbus.transaction - DEBUG - Running transaction 2
+2021-04-15 01:48:33,526 - pymodbus.transaction - DEBUG - SEND: 0xff 0x3 0x0 0x0 0x0 0xc 0x50 0x11
+2021-04-15 01:48:33,526 - pymodbus.framer.rtu_framer - DEBUG - Changing state to IDLE - Last Frame End - 1618476485.587379, Current Time stamp - 1618476513.526815
+2021-04-15 01:48:33,526 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-04-15 01:48:33,527 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-04-15 01:48:33,984 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-04-15 01:48:33,985 - pymodbus.transaction - DEBUG - RECV: 0xff 0x3 0x18 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xb8 0x80 0x41 0x4b 0xd7 0xa 0xbc 0xa3 0x0 0x0 0x0 0x0 0xb8 0x80 0x41 0x4b 0xae 0xd8
+2021-04-15 01:48:33,986 - pymodbus.framer.rtu_framer - DEBUG - Getting Frame - 0x3 0x18 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xb8 0x80 0x41 0x4b 0xd7 0xa 0xbc 0xa3 0x0 0x0 0x0 0x0 0xb8 0x80 0x41 0x4b
+2021-04-15 01:48:33,986 - pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2021-04-15 01:48:33,987 - pymodbus.framer.rtu_framer - DEBUG - Frame advanced, resetting header!!
+2021-04-15 01:48:33,987 - pymodbus.transaction - DEBUG - Adding transaction 255
+2021-04-15 01:48:33,988 - pymodbus.transaction - DEBUG - Getting transaction 255
+2021-04-15 01:48:33,989 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-04-15 01:48:40,721 - pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2021-04-15 01:48:40,721 - pymodbus.transaction - DEBUG - Running transaction 3
+2021-04-15 01:48:40,721 - pymodbus.transaction - DEBUG - SEND: 0xff 0x3 0x0 0x0 0x0 0xc 0x50 0x11
+2021-04-15 01:48:40,722 - pymodbus.framer.rtu_framer - DEBUG - Changing state to IDLE - Last Frame End - 1618476513.984637, Current Time stamp - 1618476520.721982
+2021-04-15 01:48:40,722 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-04-15 01:48:40,722 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-04-15 01:48:41,386 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-04-15 01:48:41,387 - pymodbus.transaction - DEBUG - RECV: 0xff 0x3 0x18 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xb8 0x80 0x41 0x4b 0xd7 0xa 0xbc 0xa3 0x0 0x0 0x0 0x0 0xb8 0x80 0x41 0x4b 0xae 0xd8
+2021-04-15 01:48:41,387 - pymodbus.framer.rtu_framer - DEBUG - Getting Frame - 0x3 0x18 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xb8 0x80 0x41 0x4b 0xd7 0xa 0xbc 0xa3 0x0 0x0 0x0 0x0 0xb8 0x80 0x41 0x4b
+2021-04-15 01:48:41,388 - pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2021-04-15 01:48:41,389 - pymodbus.framer.rtu_framer - DEBUG - Frame advanced, resetting header!!
+2021-04-15 01:48:41,390 - pymodbus.transaction - DEBUG - Adding transaction 255
+2021-04-15 01:48:41,390 - pymodbus.transaction - DEBUG - Getting transaction 255
+2021-04-15 01:48:41,390 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-04-15 01:49:11,474 - pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2021-04-15 01:49:11,474 - pymodbus.transaction - DEBUG - Running transaction 4
+2021-04-15 01:49:11,475 - pymodbus.transaction - DEBUG - SEND: 0xff 0x3 0x0 0x0 0x0 0xc 0x50 0x11
+2021-04-15 01:49:11,475 - pymodbus.framer.rtu_framer - DEBUG - Changing state to IDLE - Last Frame End - 1618476521.386215, Current Time stamp - 1618476551.475234
+2021-04-15 01:49:11,475 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-04-15 01:49:11,476 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-04-15 01:49:11,794 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-04-15 01:49:11,795 - pymodbus.transaction - DEBUG - RECV: 0xff 0x3 0x18 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xb8 0x80 0x41 0x4b 0xd7 0xa 0xbc 0xa3 0x0 0x0 0x0 0x0 0xb8 0x80 0x41 0x4b 0xae 0xd8
+2021-04-15 01:49:11,795 - pymodbus.framer.rtu_framer - DEBUG - Getting Frame - 0x3 0x18 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xb8 0x80 0x41 0x4b 0xd7 0xa 0xbc 0xa3 0x0 0x0 0x0 0x0 0xb8 0x80 0x41 0x4b
+2021-04-15 01:49:11,795 - pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2021-04-15 01:49:11,795 - pymodbus.framer.rtu_framer - DEBUG - Frame advanced, resetting header!!
+2021-04-15 01:49:11,795 - pymodbus.transaction - DEBUG - Adding transaction 255
+2021-04-15 01:49:11,796 - pymodbus.transaction - DEBUG - Getting transaction 255
+2021-04-15 01:49:11,796 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-04-15 01:49:11,796 - pymodbus.payload - DEBUG - [0, 0, 0, 0, 47232, 16715, 55050, 48291, 0, 0, 47232, 16715]

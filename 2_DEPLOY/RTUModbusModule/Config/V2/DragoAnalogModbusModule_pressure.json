@@ -1,0 +1,39 @@
+{
+  "MODBUS_PORT": {"value": "/dev/ttyUSB0"},
+  "MODBUS_ID": {"value": "2"},
+  "MODBUS_STOPBITS": {"value": "1"},
+  "MODBUS_BYTESIZE": {"value": "8"},
+  "MODBUS_BAUDRATE": {"value": "19200"},
+  "MODBUS_TIMEOUT": {"value": "1"},
+  "MODBUS_METHOD": {"value": "rtu"},
+  "MODBUS_PARITY": {"value": "E"},
+  "ENDIAN_BYTEORDER": {"value": "Big"},
+  "ENDIAN_WORDORDER": {"value": "Big"},
+
+  "SLEEP_INTERVAL": {"value": "60"},
+  "INTERVAL": {"value": "60"},
+  "SKIP_SAME_VALUE": {"value": "True"},
+  "SKIP_MAX_TIME": {"value": "900"},
+  "SKIP_THRESHOLD": {"value": "1e-15"},
+
+  "MODBUS_MEASUREMENT_0":	{"value": "{'PRESSURE_DOWNSTREAM_MICROTURBINE': {'REGISTER_NUMBER': 0, 'INDEX': 0, 'VALUE_TYPE': 'INT16', 'UOM': 'mA', 'SKIP_THRESHOLD': 0.01}}"},
+  "MODBUS_MEASUREMENT_1":	{"value": "{'LOW_GRID_PRESSURE': {'REGISTER_NUMBER': 1, 'INDEX': 0, 'VALUE_TYPE': 'INT16', 'UOM': 'mV', 'SKIP_THRESHOLD': 0.01}}"},
+  "MODBUS_MEASUREMENT_2":	{"value": "{'MICROTURBINE_VALVE_STATUS': 		{'REGISTER_NUMBER': 2,		'INDEX': 0,  	'VALUE_TYPE': 'INT16',   'UOM': 'mV'   }}"},  
+  "FUNCTION_CHECK_1": {"value": "{'LOW_GRID_PRESSURE_CHECK': {'VARIABLE_2_CHECK': 'LOW_GRID_PRESSURE', 'UOM_2_CHECK': 'mV' , 'UPPER_BOUND': 35, 'LOWER_BOUND': 30, 'UPPER_VALUE_DEFAULT': 0, LOWER_VALUE_DEFAULT': 10000, 'BETWEEN_BOUNDS_VARIABLE': 'MICROTURBINE_VALVE_STATUS', 'BETWEEN_VALUE_DEFAULT': 10000, 'DEFAULT_VALUE': 10000, 'OUTPUT_VARIABLE': 'MICROTURBINE_VALVE_STATUS', 'SKIP_THRESHOLD': '0.5', 'UOM': 'mV' }}"},
+
+  "TIMEOUT_FOR_DEFAULT": {"value": "10800"},
+  "FEEDBACK_ACTIVATION": {"value": "False"},
+  "SECRET_KEY": {"value": "NULL"},
+  
+  "CONFIG_FILE": {"value": "rtuModbusReader.config"},
+  "CONFIG_SLEEP_INTERVAL": {"value": "3600"},
+  "CONFIG_INTERVAL": {"value": "3600"},
+  "CONFIG_SKIP_SAME_VALUE": {"value": "True"},
+  "CONFIG_SKIP_MAX_TIME": {"value": "86400"},
+  "CONFIG_SKIP_THRESHOLD": {"value": "1e-15"},
+
+  "ENABLED": {"value": "True"},
+  "CONFIG_ENABLED": {"value": "False"},
+  "VERSION": {"value": "5"},
+  "MODULE_TYPE": {"value": "MICROTURBINE_MA1"}
+}

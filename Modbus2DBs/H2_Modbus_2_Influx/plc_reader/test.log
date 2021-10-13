@@ -1,0 +1,25 @@
+2021-03-30 03:47:23,154 - __main__ - INFO - init_logging::end
+2021-03-30 03:47:23,177 - root - INFO - ::START::
+2021-03-30 03:47:23,177 - root - INFO - ------------------------------------------------------
+2021-03-30 03:47:23,639 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 172.17.0.1:8086
+2021-03-30 03:47:23,649 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (2): 172.17.0.1:8086
+2021-03-30 03:47:23,655 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (3): 172.17.0.1:8086
+2021-10-01 05:34:40,583 - __main__ - INFO - init_logging::end
+2021-10-01 05:34:40,584 - root - INFO - ::START::
+2021-10-01 05:34:40,585 - root - INFO - ------------------------------------------------------
+2021-10-01 05:34:43,591 - pymodbus.client.sync - ERROR - Connection to (10.16.180.1, 666) failed: timed out
+2021-10-01 05:34:43,593 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 172.17.0.1:8086
+2021-10-01 05:35:04,602 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (2): 172.17.0.1:8086
+2021-10-01 05:35:25,618 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (3): 172.17.0.1:8086
+2021-10-01 05:36:25,840 - __main__ - INFO - init_logging::end
+2021-10-01 05:36:25,841 - root - INFO - ::START::
+2021-10-01 05:36:25,841 - root - INFO - ------------------------------------------------------
+2021-10-01 05:36:28,843 - pymodbus.client.sync - ERROR - Connection to (10.16.180.1, 666) failed: timed out
+2021-10-01 05:36:28,846 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 172.17.0.1:8086
+2021-10-01 05:36:32,640 - __main__ - INFO - init_logging::end
+2021-10-01 05:36:32,644 - root - INFO - ::START::
+2021-10-01 05:36:32,649 - root - INFO - ------------------------------------------------------
+2021-10-01 05:36:35,661 - pymodbus.client.sync - ERROR - Connection to (10.16.180.1, 666) failed: timed out
+2021-10-01 05:36:35,670 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 172.17.0.1:8086
+2021-10-01 05:36:49,857 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (2): 172.17.0.1:8086
+2021-10-01 05:37:10,867 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (3): 172.17.0.1:8086

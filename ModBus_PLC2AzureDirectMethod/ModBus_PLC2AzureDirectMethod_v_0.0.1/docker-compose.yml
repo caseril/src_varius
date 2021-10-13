@@ -1,0 +1,19 @@
+version: "3.3"
+
+services:
+  mb_plc2azure_directmethod:
+    image: mb_plc2azure_directmethod
+    build:
+      context: ./
+      dockerfile: ./Dockerfile.amd64
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    container_name: mb_plc2azure_directmethod
+    environment:
+      LOCAL_NETWORK: ${LOCAL_NETWORK}
+      HOST_IP: ${HOST_IP}
+    cap_add: 
+      - net_admin
+    volumes:
+      - ~/.ssh:/root/.ssh

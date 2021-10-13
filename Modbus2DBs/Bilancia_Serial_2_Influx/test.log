@@ -1,0 +1,84 @@
+2021-04-20 23:56:24,279 - __main__ - INFO - init_logging::end
+2021-04-20 23:56:24,283 - root - INFO - ::START::
+2021-04-20 23:56:24,284 - root - INFO - ------------------------------------------------------
+2021-04-20 23:56:26,865 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8086
+2021-04-20 23:57:14,281 - __main__ - INFO - init_logging::end
+2021-04-20 23:57:14,282 - root - INFO - ::START::
+2021-04-20 23:57:14,283 - root - INFO - ------------------------------------------------------
+2021-04-20 23:57:23,800 - root - INFO - ::SARTORIUS CONNECTED::
+2021-04-20 23:57:25,039 - root - INFO - ::START READING SARTORIUS::
+2021-04-20 23:57:34,906 - asyncio - DEBUG - Using selector: EpollSelector
+2021-04-21 00:10:46,217 - __main__ - INFO - init_logging::end
+2021-04-21 00:10:46,220 - root - INFO - ::START::
+2021-04-21 00:10:46,221 - root - INFO - ------------------------------------------------------
+2021-04-21 00:10:54,690 - root - INFO - ::SARTORIUS CONNECTED::
+2021-04-21 00:10:54,692 - root - INFO - ::START READING SARTORIUS::
+2021-04-21 00:10:56,655 - asyncio - DEBUG - Using selector: EpollSelector
+2021-04-21 01:57:30,659 - __main__ - INFO - init_logging::end
+2021-04-21 01:57:30,661 - root - INFO - ::START::
+2021-04-21 01:57:30,662 - root - INFO - ------------------------------------------------------
+2021-04-21 01:57:39,458 - root - INFO - ::SARTORIUS CONNECTED::
+2021-04-21 01:57:40,112 - root - INFO - ::START READING SARTORIUS::
+2021-04-21 01:57:43,964 - asyncio - DEBUG - Using selector: EpollSelector
+2021-04-21 01:58:30,736 - __main__ - INFO - init_logging::end
+2021-04-21 01:58:30,743 - root - INFO - ::START::
+2021-04-21 01:58:30,745 - root - INFO - ------------------------------------------------------
+2021-04-21 01:58:45,149 - root - CRITICAL - Error::[Errno 5] Input/output error
+2021-04-21 01:59:10,705 - __main__ - INFO - init_logging::end
+2021-04-21 01:59:10,707 - root - INFO - ::START::
+2021-04-21 01:59:10,708 - root - INFO - ------------------------------------------------------
+2021-04-21 01:59:13,068 - root - INFO - ::SARTORIUS CONNECTED::
+2021-04-21 01:59:13,075 - root - INFO - ::START READING SARTORIUS::
+2021-04-21 01:59:15,399 - asyncio - DEBUG - Using selector: EpollSelector
+2021-04-21 01:59:39,116 - root - CRITICAL - ::error: 'NoneType' object has no attribute 'write_data'::
+2021-04-21 01:59:49,254 - root - CRITICAL - ::error: 'NoneType' object has no attribute 'write_data'::
+2021-04-21 01:59:59,611 - root - CRITICAL - ::error: 'NoneType' object has no attribute 'write_data'::
+2021-04-21 03:01:54,184 - __main__ - INFO - init_logging::end
+2021-04-21 03:01:54,187 - root - INFO - ::START::
+2021-04-21 03:01:54,188 - root - INFO - ------------------------------------------------------
+2021-04-21 03:01:59,452 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 172.17.0.1:8086
+2021-04-21 03:02:15,831 - __main__ - INFO - init_logging::end
+2021-04-21 03:02:15,832 - root - INFO - ::START::
+2021-04-21 03:02:15,833 - root - INFO - ------------------------------------------------------
+2021-04-21 03:02:16,696 - root - INFO - ::SARTORIUS CONNECTED::
+2021-04-21 03:02:16,697 - root - INFO - ::START READING SARTORIUS::
+2021-04-21 03:02:18,482 - asyncio - DEBUG - Using selector: EpollSelector
+2021-04-21 03:02:29,093 - root - CRITICAL - ::error: 'NoneType' object has no attribute 'write_data'::
+2021-04-21 03:02:40,843 - root - CRITICAL - ::error: 'NoneType' object has no attribute 'write_data'::
+2021-04-21 03:02:54,036 - root - CRITICAL - ::error: 'NoneType' object has no attribute 'write_data'::
+2021-04-21 03:03:10,616 - root - CRITICAL - ::error: 'NoneType' object has no attribute 'write_data'::
+2021-04-21 03:03:20,310 - root - CRITICAL - ::error: 'NoneType' object has no attribute 'write_data'::
+2021-04-21 03:04:08,414 - root - CRITICAL - ::error: 'NoneType' object has no attribute 'write_data'::
+2021-04-21 03:04:47,212 - __main__ - INFO - init_logging::end
+2021-04-21 03:04:47,215 - root - INFO - ::START::
+2021-04-21 03:04:47,216 - root - INFO - ------------------------------------------------------
+2021-04-21 03:04:48,567 - root - INFO - ::SARTORIUS CONNECTED::
+2021-04-21 03:04:48,568 - root - INFO - ::START READING SARTORIUS::
+2021-04-21 03:04:52,513 - asyncio - DEBUG - Using selector: EpollSelector
+2021-04-21 03:04:58,463 - root - CRITICAL - ::error: 'NoneType' object has no attribute 'write_data'::
+2021-04-21 03:05:14,551 - root - CRITICAL - ::error: 'NoneType' object has no attribute 'write_data'::
+2021-04-21 03:05:29,944 - root - CRITICAL - ::error: 'NoneType' object has no attribute 'write_data'::
+2021-04-21 03:05:53,859 - root - CRITICAL - ::error: 'NoneType' object has no attribute 'write_data'::
+2021-04-21 03:06:12,770 - root - CRITICAL - ::error: 'NoneType' object has no attribute 'write_data'::
+2021-04-21 03:06:37,148 - root - CRITICAL - ::error: 'NoneType' object has no attribute 'write_data'::
+2021-04-21 03:46:22,245 - __main__ - INFO - init_logging::end
+2021-04-21 03:46:22,256 - root - INFO - ::START::
+2021-04-21 03:46:22,257 - root - INFO - ------------------------------------------------------
+2021-04-21 03:46:25,390 - root - INFO - ::SARTORIUS CONNECTED::
+2021-04-21 03:46:25,391 - root - INFO - ::START READING SARTORIUS::
+2021-04-21 03:46:32,647 - asyncio - DEBUG - Using selector: EpollSelector
+2021-04-21 03:46:43,066 - root - CRITICAL - ::error: 'NoneType' object has no attribute 'write_data'::
+2021-04-21 03:46:59,921 - root - CRITICAL - ::error: 'NoneType' object has no attribute 'write_data'::
+2021-04-21 03:47:11,282 - root - CRITICAL - ::error: 'NoneType' object has no attribute 'write_data'::
+2021-04-21 03:50:53,550 - __main__ - INFO - init_logging::end
+2021-04-21 03:50:53,552 - root - INFO - ::START::
+2021-04-21 03:50:53,552 - root - INFO - ------------------------------------------------------
+2021-04-21 03:50:56,432 - root - INFO - ::SARTORIUS CONNECTED::
+2021-04-21 03:50:56,434 - root - INFO - ::START READING SARTORIUS::
+2021-04-21 03:50:56,437 - asyncio - DEBUG - Using selector: EpollSelector
+2021-04-21 03:51:02,708 - root - CRITICAL - ::error: 'NoneType' object has no attribute 'write_data'::
+2021-04-21 03:51:16,793 - root - CRITICAL - ::error: 'NoneType' object has no attribute 'write_data'::
+2021-04-21 03:51:27,267 - root - CRITICAL - ::error: 'NoneType' object has no attribute 'write_data'::
+2021-04-21 03:52:27,089 - __main__ - INFO - init_logging::end
+2021-04-21 03:52:27,090 - root - INFO - ::START::
+2021-04-21 03:52:27,090 - root - INFO - ------------------------------------------------------

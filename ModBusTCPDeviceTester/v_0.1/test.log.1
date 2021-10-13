@@ -1,0 +1,103 @@
+2021-10-11 23:30:14,444 - pymodbus.transaction - DEBUG - SEND: 0x0 0x2 0x0 0x0 0x0 0xb 0x1 0x10 0x1 0x51 0x0 0x2 0x4 0x0 0x0 0xc8 0x42
+2021-10-11 23:30:14,445 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-10-11 23:30:14,445 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-10-11 23:30:14,793 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-10-11 23:30:14,793 - pymodbus.transaction - DEBUG - RECV: 0x0 0x2 0x0 0x0 0x0 0x6 0x1 0x10 0x1 0x51 0x0 0x2
+2021-10-11 23:30:14,793 - pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x2 0x0 0x0 0x0 0x6 0x1 0x10 0x1 0x51 0x0 0x2
+2021-10-11 23:30:14,793 - pymodbus.factory - DEBUG - Factory Response[WriteMultipleRegistersResponse: 16]
+2021-10-11 23:30:14,794 - pymodbus.transaction - DEBUG - Adding transaction 2
+2021-10-11 23:30:14,794 - pymodbus.transaction - DEBUG - Getting transaction 2
+2021-10-11 23:30:14,794 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-10-11 23:30:16,204 - pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2021-10-11 23:30:16,205 - pymodbus.transaction - DEBUG - Running transaction 3
+2021-10-11 23:30:16,205 - pymodbus.transaction - DEBUG - SEND: 0x0 0x3 0x0 0x0 0x0 0x6 0x1 0x3 0x1 0x51 0x0 0x2
+2021-10-11 23:30:16,206 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-10-11 23:30:16,206 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-10-11 23:30:16,538 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-10-11 23:30:16,539 - pymodbus.transaction - DEBUG - RECV: 0x0 0x3 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x0 0x0 0xc8 0x42
+2021-10-11 23:30:16,539 - pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x3 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x0 0x0 0xc8 0x42
+2021-10-11 23:30:16,540 - pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2021-10-11 23:30:16,540 - pymodbus.transaction - DEBUG - Adding transaction 3
+2021-10-11 23:30:16,541 - pymodbus.transaction - DEBUG - Getting transaction 3
+2021-10-11 23:30:16,542 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-10-11 23:30:16,542 - root - DEBUG - read_holding_registers::register::337::count::2::values::[0, 51266]
+2021-10-11 23:30:16,542 - root - DEBUG - read_value::register::337::count::2::values::[0, 51266]
+2021-10-11 23:30:16,542 - pymodbus.payload - DEBUG - [0, 51266]
+2021-10-11 23:30:16,542 - pymodbus.payload - DEBUG - [b'B\xc8', b'\x00\x00']
+2021-10-11 23:37:18,620 - __main__ - INFO - init_logging::end
+2021-10-11 23:37:20,529 - pymodbus.transaction - DEBUG - Current transaction state - IDLE
+2021-10-11 23:37:20,530 - pymodbus.transaction - DEBUG - Running transaction 1
+2021-10-11 23:37:20,532 - pymodbus.transaction - DEBUG - SEND: 0x0 0x1 0x0 0x0 0x0 0x6 0x1 0x3 0x1 0x51 0x0 0x2
+2021-10-11 23:37:20,532 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-10-11 23:37:20,533 - pymodbus.transaction - DEBUG - Transaction failed. ([Errno 104] Connection reset by peer) 
+2021-10-11 23:37:20,533 - pymodbus.framer.socket_framer - DEBUG - Processing: 
+2021-10-11 23:37:20,533 - pymodbus.transaction - DEBUG - Getting transaction 1
+2021-10-11 23:37:20,533 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-10-11 23:37:20,534 - root - DEBUG - run_and_try_if_true iteration 0
+2021-10-11 23:37:20,535 - root - ERROR - Traceback (most recent call last):
+  File "/home/ubuntu/Projects/Lorenzo/src VARIO/ModBusTCPDeviceTester/v_0.1/library/utils.py", line 371, in run_and_try_async
+    return f(*args, **kwargs)
+  File "/home/ubuntu/Projects/Lorenzo/src VARIO/ModBusTCPDeviceTester/v_0.1/library/base_modbus.py", line 215, in read_holding_registers
+    registers = self.client.read_holding_registers(register, count, unit=self.modbus_id).registers
+AttributeError: 'ModbusIOException' object has no attribute 'registers'
+
+2021-10-11 23:37:20,971 - pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2021-10-11 23:37:20,972 - pymodbus.transaction - DEBUG - Running transaction 2
+2021-10-11 23:37:20,975 - pymodbus.transaction - DEBUG - SEND: 0x0 0x2 0x0 0x0 0x0 0x6 0x1 0x3 0x1 0x51 0x0 0x2
+2021-10-11 23:37:20,976 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-10-11 23:37:20,977 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-10-11 23:37:21,300 - pymodbus.transaction - DEBUG - Transaction failed. ([Errno 104] Connection reset by peer) 
+2021-10-11 23:37:21,301 - pymodbus.framer.socket_framer - DEBUG - Processing: 
+2021-10-11 23:37:21,302 - pymodbus.transaction - DEBUG - Getting transaction 2
+2021-10-11 23:37:21,303 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-10-11 23:37:21,304 - root - DEBUG - run_and_try_if_true iteration 1
+2021-10-11 23:37:21,737 - pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2021-10-11 23:37:21,739 - pymodbus.transaction - DEBUG - Running transaction 3
+2021-10-11 23:37:21,740 - pymodbus.transaction - DEBUG - SEND: 0x0 0x3 0x0 0x0 0x0 0x6 0x1 0x3 0x1 0x51 0x0 0x2
+2021-10-11 23:37:21,741 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-10-11 23:37:21,742 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-10-11 23:37:22,066 - pymodbus.transaction - DEBUG - Transaction failed. ([Errno 104] Connection reset by peer) 
+2021-10-11 23:37:22,067 - pymodbus.framer.socket_framer - DEBUG - Processing: 
+2021-10-11 23:37:22,067 - pymodbus.transaction - DEBUG - Getting transaction 3
+2021-10-11 23:37:22,067 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-10-11 23:37:22,067 - root - DEBUG - run_and_try_if_true iteration 2
+2021-10-11 23:37:22,169 - root - DEBUG - read_value::register::337::count::2::values::None
+2021-10-11 23:37:24,548 - pymodbus.payload - DEBUG - [0, 51266]
+2021-10-11 23:37:24,550 - root - CRITICAL - write_value::holding::register::337::value::[0, 51266]
+2021-10-11 23:37:24,550 - pymodbus.payload - DEBUG - [0, 51266]
+2021-10-11 23:37:24,885 - pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2021-10-11 23:37:24,885 - pymodbus.transaction - DEBUG - Running transaction 4
+2021-10-11 23:37:24,886 - pymodbus.transaction - DEBUG - SEND: 0x0 0x4 0x0 0x0 0x0 0xb 0x1 0x10 0x1 0x51 0x0 0x2 0x4 0x0 0x0 0xc8 0x42
+2021-10-11 23:37:24,886 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-10-11 23:37:24,886 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-10-11 23:37:25,213 - pymodbus.transaction - DEBUG - Transaction failed. ([Errno 104] Connection reset by peer) 
+2021-10-11 23:37:25,213 - pymodbus.framer.socket_framer - DEBUG - Processing: 
+2021-10-11 23:37:25,213 - pymodbus.transaction - DEBUG - Getting transaction 4
+2021-10-11 23:37:25,214 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-10-11 23:37:28,829 - pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2021-10-11 23:37:28,830 - pymodbus.transaction - DEBUG - Running transaction 5
+2021-10-11 23:37:28,830 - pymodbus.transaction - DEBUG - SEND: 0x0 0x5 0x0 0x0 0x0 0x6 0x1 0x3 0x1 0x51 0x0 0x2
+2021-10-11 23:37:28,831 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-10-11 23:37:28,831 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-10-11 23:37:29,159 - pymodbus.transaction - DEBUG - Transaction failed. ([Errno 104] Connection reset by peer) 
+2021-10-11 23:37:29,160 - pymodbus.framer.socket_framer - DEBUG - Processing: 
+2021-10-11 23:37:29,160 - pymodbus.transaction - DEBUG - Getting transaction 5
+2021-10-11 23:37:29,161 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-10-11 23:37:29,161 - root - DEBUG - run_and_try_if_true iteration 0
+2021-10-11 23:37:29,161 - root - ERROR - Traceback (most recent call last):
+  File "/home/ubuntu/Projects/Lorenzo/src VARIO/ModBusTCPDeviceTester/v_0.1/library/utils.py", line 371, in run_and_try_async
+    return f(*args, **kwargs)
+  File "/home/ubuntu/Projects/Lorenzo/src VARIO/ModBusTCPDeviceTester/v_0.1/library/base_modbus.py", line 215, in read_holding_registers
+    registers = self.client.read_holding_registers(register, count, unit=self.modbus_id).registers
+AttributeError: 'ModbusIOException' object has no attribute 'registers'
+
+2021-10-11 23:37:29,597 - pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2021-10-11 23:37:29,597 - pymodbus.transaction - DEBUG - Running transaction 6
+2021-10-11 23:37:29,598 - pymodbus.transaction - DEBUG - SEND: 0x0 0x6 0x0 0x0 0x0 0x6 0x1 0x3 0x1 0x51 0x0 0x2
+2021-10-11 23:37:29,598 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-10-11 23:37:29,599 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-10-11 23:37:29,932 - pymodbus.transaction - DEBUG - Transaction failed. ([Errno 104] Connection reset by peer) 
+2021-10-11 23:37:29,935 - pymodbus.framer.socket_framer - DEBUG - Processing: 
+2021-10-11 23:37:29,935 - pymodbus.transaction - DEBUG - Getting transaction 6
+2021-10-11 23:37:29,935 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-10-11 23:37:29,936 - root - DEBUG - run_and_try_if_true iteration 1

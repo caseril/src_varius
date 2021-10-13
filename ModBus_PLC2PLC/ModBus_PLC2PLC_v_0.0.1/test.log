@@ -1,0 +1,47 @@
+2021-10-05 10:44:29,750 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<PlcLooper.plc_ping() done, defined at /home/ubuntu/Projects/Lorenzo/src VARIO/ModBus_PLC2PLC/plc_looper.py:31> exception=AttributeError("'NoneType' object has no attribute 'device_instance'")>
+Traceback (most recent call last):
+  File "/home/ubuntu/Projects/Lorenzo/src VARIO/ModBus_PLC2PLC/plc_looper.py", line 33, in plc_ping
+    if p.device_instance is not None:
+AttributeError: 'NoneType' object has no attribute 'device_instance'
+2021-10-05 10:50:54,470 - __main__ - INFO - init_logging::end
+2021-10-05 10:50:54,473 - root - INFO - ::START::
+2021-10-05 10:50:54,474 - root - INFO - ------------------------------------------------------
+2021-10-05 10:50:57,488 - pymodbus.client.sync - ERROR - Connection to (10.16.99.1, 502) failed: timed out
+2021-10-05 10:51:00,497 - pymodbus.client.sync - ERROR - Connection to (10.16.217.1, 666) failed: timed out
+2021-10-05 10:51:24,365 - __main__ - INFO - init_logging::end
+2021-10-05 10:51:24,371 - root - INFO - ::START::
+2021-10-05 10:51:24,375 - root - INFO - ------------------------------------------------------
+2021-10-05 10:51:27,389 - pymodbus.client.sync - ERROR - Connection to (10.16.37, 502) failed: timed out
+2021-10-05 10:51:30,395 - pymodbus.client.sync - ERROR - Connection to (10.16.217.1, 666) failed: timed out
+2021-10-05 10:51:47,404 - __main__ - INFO - init_logging::end
+2021-10-05 10:51:47,411 - root - INFO - ::START::
+2021-10-05 10:51:47,414 - root - INFO - ------------------------------------------------------
+2021-10-05 10:51:51,833 - pymodbus.client.sync - ERROR - Connection to (10.16.217.1, 666) failed: timed out
+2021-10-05 10:52:01,825 - __main__ - INFO - init_logging::end
+2021-10-05 10:52:01,830 - root - INFO - ::START::
+2021-10-05 10:52:01,831 - root - INFO - ------------------------------------------------------
+2021-10-05 10:52:06,036 - pymodbus.client.sync - ERROR - Connection to (10.16.217.1, 666) failed: timed out
+2021-10-05 10:52:53,148 - __main__ - INFO - init_logging::end
+2021-10-05 10:52:53,156 - root - INFO - ::START::
+2021-10-05 10:52:53,157 - root - INFO - ------------------------------------------------------
+2021-10-05 10:52:56,944 - asyncio - DEBUG - Using selector: EpollSelector
+2021-10-05 10:52:58,536 - root - DEBUG - PING::10.16.37.1:502::RECEIVED
+2021-10-05 10:52:58,916 - root - DEBUG - PING::10.16.217.1:666::RECEIVED
+2021-10-05 10:52:58,919 - pymodbus.transaction - DEBUG - Current transaction state - IDLE
+2021-10-05 10:52:58,919 - pymodbus.transaction - DEBUG - Running transaction 1
+2021-10-05 10:52:58,921 - pymodbus.transaction - DEBUG - SEND: 0x0 0x1 0x0 0x0 0x0 0x6 0x1 0x3 0x2 0xdc 0x0 0x2
+2021-10-05 10:52:58,923 - pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2021-10-05 10:52:58,923 - pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2021-10-05 10:52:59,997 - pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2021-10-05 10:52:59,999 - pymodbus.transaction - DEBUG - RECV: 0x0 0x1 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x7b 0x9f 0x44 0x2a
+2021-10-05 10:53:00,000 - pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x1 0x0 0x0 0x0 0x7 0x1 0x3 0x4 0x7b 0x9f 0x44 0x2a
+2021-10-05 10:53:00,002 - pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2021-10-05 10:53:00,004 - pymodbus.transaction - DEBUG - Adding transaction 1
+2021-10-05 10:53:00,005 - pymodbus.transaction - DEBUG - Getting transaction 1
+2021-10-05 10:53:00,006 - pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2021-10-05 10:53:00,006 - root - DEBUG - read_holding_registers::register::732::count::2::values::[31647, 17450]
+2021-10-05 10:53:00,024 - root - DEBUG - read_value::register::732::count::2::values::[31647, 17450]
+2021-10-05 10:53:00,049 - pymodbus.payload - DEBUG - [31647, 17450]
+2021-10-05 10:53:00,056 - pymodbus.payload - DEBUG - [b'D*', b'{\x9f']
+2021-10-05 10:53:00,057 - root - DEBUG - reading::AC_POWER_VALUE::732::value type::FLOAT32::value::681.9315795898438
